@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "Orbitron-SemiBold";
+    src: url("../fonts/Orbitron/Orbitron-SemiBold.ttf");
+}
+*{
+    color: #CBCBCB;
+    font-family: "Orbitron-SemiBold", sans-serif;
+}
