@@ -1,11 +1,13 @@
-import "../styles/NavElements.css";
+import "../styles/NavElements.css"
 
-function NavElements({ text }) {
-  return (
-    <>
-      <li className="navElements">{text}</li>
-    </>
-  );
+function NavElements({text}) {
+    return (
+        <>
+            <li className="navElements">
+                {text}
+            </li>
+        </>
+    )
 }
 
 export default NavElements;
