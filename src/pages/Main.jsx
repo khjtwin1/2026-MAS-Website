@@ -1,3 +1,4 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "../components/Header";
 import Hero from "../pages//Hero";
 import CoreValues from "./CoreValues";
@@ -10,7 +11,7 @@ function Main() {
       <Header />
       <Hero />
       <CoreValues />
-      {/* <QnA /> */}
+      <QnA />
       <Footer />
     </>
   );
