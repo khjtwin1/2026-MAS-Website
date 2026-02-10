@@ -6,7 +6,7 @@ function CoreValuesElements({ image, title, content }) {
       <div className="background">
         <img src={image} alt={title} />
       </div>
-      <h3>{title}</h3>
+      <h2>{title}</h2>
       <p>{content}</p>
     </div>
   );

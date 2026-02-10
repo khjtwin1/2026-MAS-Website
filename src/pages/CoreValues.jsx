@@ -1,11 +1,12 @@
 import "../styles/CoreValues.css";
 import CoreValuesElements from "../components/CoreValuesElements";
-import img1 from "../../public/growth.svg";
-import img2 from "../../public/sharing.svg";
-import img3 from "../../public/challenge.svg";
-import img4 from "../../public/collaboration.svg";
-import img5 from "../../public/execution.svg";
-import img6 from "../../public/responsebility.svg";
+
+const img1 = "/growth.svg";
+const img2 = "/sharing.svg";
+const img3 = "/challenge.svg";
+const img4 = "/collaboration.svg";
+const img5 = "/execution.svg";
+const img6 = "/responsebility.svg";
 
 const coreValues = [
   {
@@ -48,20 +49,22 @@ const coreValues = [
 
 function CoreValues() {
   return (
-    <div className="coreValues">
-      <h1 className="title">CORE VALUES</h1>
-      <p className="orange">MAS가 추구하는 핵심 가치</p>
-      <div className="corevalues_items">
-        {coreValues.map((item) => (
-          <CoreValuesElements
-            key={item.title}
-            image={item.image}
-            title={item.title}
-            content={item.content}
-          />
-        ))}
+    <section id="vision">
+      <div className="coreValues">
+        <h1 className="title">CORE VALUES</h1>
+        <p className="orange">MAS가 추구하는 핵심 가치</p>
+        <div className="corevalues_items">
+          {coreValues.map((item) => (
+            <CoreValuesElements
+              key={item.title}
+              image={item.image}
+              title={item.title}
+              content={item.content}
+            />
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 

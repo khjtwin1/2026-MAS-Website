@@ -1,8 +1,9 @@
-import ask from "../../public/ask.svg";
-import instagram from "../../public/instagram.svg";
-import github from "../../public/github.svg";
 import "../styles/SocialLinks.css";
 import SocialLinksItem from "../components/SocialLinksItem";
+
+const ask = "/ask.svg";
+const instagram = "/instagram.svg";
+const github = "/github.svg";
 
 const socialLinks = [
   { icon: ask, url: "https://asked.kr/Mas_Mirim", alt: "에스크" },
