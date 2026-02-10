@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Orbitron-Black";
-  src: url("../fonts/Orbitron/Orbitron-Black.ttf");
+  src: url("/fonts/Orbitron/Orbitron-Black.ttf");
 }
 @font-face {
   font-family: "Orbitron-Bold";
-  src: url("../fonts/Orbitron/Orbitron-Bold.ttf");
+  src: url("/fonts/Orbitron/Orbitron-Bold.ttf");
 }
 
 * {
@@ -22,7 +22,6 @@
   left: 0;
   right: 0;
   align-items: center;
-  /* border-bottom: 1px solid yellow; */
   box-shadow: 0 2px 11.9px 0 rgba(90, 90, 90, 0.25);
   backdrop-filter: blur(12.149999618530273px);
 }
@@ -35,8 +34,8 @@
   cursor: pointer;
 }
 .header_logo > img {
-  width: 48px;
-  height: 48px;
+  width: 46px;
+  height: 46px;
 }
 .logoText {
   display: block;

@@ -1,14 +1,14 @@
 @font-face {
   font-family: "Orbitron-Bold";
-  src: url("../fonts/Orbitron/Orbitron-Bold.ttf");
+  src: url("/fonts/Orbitron/Orbitron-Bold.ttf");
 }
 @font-face {
   font-family: "Orbitron-Medium";
-  src: url("../fonts/Orbitron/Orbitron-Medium.ttf");
+  src: url("/fonts/Orbitron/Orbitron-Medium.ttf");
 }
 @font-face {
   font-family: "Pretendard-Medium";
-  src: url("../fonts/Pretendard/Pretendard-Medium.otf");
+  src: url("/fonts/Pretendard/Pretendard-Medium.otf");
 }
 
 .footer {
@@ -41,7 +41,7 @@
 }
 .info p {
   font-family: "Pretendard-Medium", sans-serif;
-  font-size: 10px;
+  font-size: 12px;
   color: #3b3b3b;
   margin-top: 5px;
 }

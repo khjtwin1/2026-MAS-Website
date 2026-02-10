@@ -2,13 +2,13 @@ import SocialLinks from "./SocialLinks";
 import "../styles/Footer.css";
 import NavElements from "./NavElements";
 
-let navItems = [
-  "VISON",
-  "PRIZE",
-  "MEMBERS",
-  "PROJECTS",
-  "Q&A",
-  "JOIN THE CREW",
+const navItems = [
+  { text: "VISION", path: "#vision" },
+  { text: "PRIZE", path: "#prize" },
+  { text: "MEMBERS", path: "#members" },
+  { text: "PROJECTS", path: "#projects" },
+  { text: "Q&A", path: "#qna" },
+  { text: "JOIN THE CREW", path: "#" },
 ];
 
 function Footer() {
@@ -31,7 +31,9 @@ function Footer() {
         <p className="title">NAVIGATION</p>
         <ul className="nav_list">
           {navItems.map((item) => (
-            <NavElements key={item} text={item} />
+            <NavElements
+              key={item.text} text={item.text} path={item.path} isHighlight={item.text === "JOIN THE CREW"}
+            />
           ))}
         </ul>
       </div>
