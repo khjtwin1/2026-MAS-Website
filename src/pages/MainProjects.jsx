@@ -14,7 +14,7 @@ function MainProjects() {
         <path d="M1 8H17M17 8L9.8 1M17 8L9.8 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
         </svg></Link>
       </div>
-      <p>이미지 슬라이드 애니메이션 들어갈 곳</p>
+      <p>이미지 슬라이드 애니메이션 들어갈 곳...</p>
         
     </>
   );
