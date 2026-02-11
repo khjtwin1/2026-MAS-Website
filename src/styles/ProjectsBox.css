@@ -1,0 +1,78 @@
+/* 폰트 설정 */
+@font-face {
+    font-family: "Orbitron-ExtraBold";
+    src: url("../fonts/Orbitron/Orbitron-ExtraBold.ttf");
+}
+@font-face {
+    font-family: "Pretendard-Medium";
+    src: url("../fonts/Pretendard/Pretendard-Medium.otf");
+}
+@font-face {
+    font-family: "Pretendard-bold";
+    src: url("../fonts/Pretendard/Pretendard-bold.otf");
+}
+
+/* 전체 상자 */
+.project-box {
+    width: 440px;
+    height: 370px;
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+/* 배경 이미지 */
+.project-image {
+    width: 100%;
+    height: 243px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+}
+
+/* 프로젝트 타입 & 연도 컨테이너 (바구니) */
+.project-tag-wrap {
+    background: none;
+    position: absolute;
+    left: 14px;
+    top: 14px;
+    display: flex;
+    gap: 8px;
+}
+
+/* 태그 스타일 */
+.tag {
+    font-family: "Pretendard-Medium", sans-serif;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.20);
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    padding: 8px;
+}
+
+/* 텍스트 컨테이너 */
+.project-content {
+    background: none;
+    margin-left: 19px;
+}
+
+/* 프로젝트 이름 */
+.boxTitle {
+    font-family: "Pretendard-bold", sans-serif;
+    background: none;
+    font-size: 19px;
+    color: #414141;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+/* 프로젝트 설명 */
+.boxSubTitle {
+    font-family: "Pretendard-Medium", sans-serif;
+    background: none;
+    font-size: 13px;
+    color: #959595;
+    white-space: pre-wrap;
+}
