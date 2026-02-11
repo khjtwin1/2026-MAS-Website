@@ -7,10 +7,10 @@
   src: url("/fonts/Orbitron/Orbitron-Bold.ttf");
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #020202;
 }
 .header {
   background: rgba(2, 2, 2, 0.8);
@@ -26,46 +26,33 @@
   backdrop-filter: blur(12.149999618530273px);
 }
 /* 로고 부분 */
-.header_logo {
-  display: flex;
-  align-items: center;
+.header_logo{
+    display: flex;
+    align-items: center;
 }
-.header_logo:hover {
-  cursor: pointer;
+.header_logo > img{
+    width: 42px;
+    height: 100%;
 }
 .header_logo > img {
   width: 46px;
   height: 46px;
 }
-.logoText {
-  display: block;
-  margin-left: 9px;
+.logo{
+    font-family: "Orbitron-Black", sans-serif;
+    font-size: 16px;
+    color: #FF6723;
 }
-.logo {
-  font-family: "Orbitron-Black", sans-serif;
-  font-size: 16px;
-  color: #ff6723;
-}
-.logoMeaning {
-  font-family: "Orbitron-Bold", sans-serif;
-  font-size: 8px;
-  color: #949494;
-  width: 75px;
+.logoMeaning{
+    font-family: "Orbitron-Bold",sans-serif;
+    font-size: 8px;
+    color: #949494;
 }
 
 /* nav 부분 */
-.header > .nav_list {
-  align-items: center;
-  margin-left: 13%;
-  font-size: 16px;
-  display: flex;
-  list-style: none;
-  gap: 35px;
-  color: #cbcbcb;
-}
-.header_socialLinks {
-  margin-left: 8%;
-}
-.header_apply {
-  margin-left: 60px;
+.nav_list{
+    align-items: center;
+    display: flex;
+    list-style: none;
+    gap: 40px;
 }
