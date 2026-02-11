@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Orbitron-Bold";
+  src: url("/fonts/Orbitron/Orbitron-Bold.ttf");
+}
+@font-face {
+  font-family: "Pretendard-Medium";
+  src: url("/fonts/Pretendard/Pretendard-Medium.otf");
+}
+
+.coreValuesElement {
+  border: 1px solid rgba(94, 94, 94, 0.7);
+  border-radius: 16px;
+  width: 371px;
+  height: 235px;
+  padding: 24px;
+  white-space: pre;
+}
+.coreValuesElement:hover {
+  transition: 0.2s ease;
+  border: 1px solid rgba(255, 103, 35, 0.7);
+}
+.coreValuesElement > .background {
+  width: 70px;
+  height: 70px;
+  background-color: #181818;
+  border-radius: 14px;
+  margin-bottom: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.coreValuesElement:hover > .background {
+  transition: 0.2s ease;
+  background-color: #ff6723;
+}
+.coreValuesElement:hover > .background > img {
+  filter: brightness(0) invert(0.95);
+}
+.coreValuesElement > .background > img {
+  width: 43px;
+  height: 43px;
+}
+.coreValuesElement > h2 {
+  font-family: "Orbitron-Bold";
+  font-size: 19px;
+  margin-bottom: 11px;
+}
+.coreValuesElement > p {
+  font-family: "Pretendard-Medium";
+  font-size: 13px;
+}
