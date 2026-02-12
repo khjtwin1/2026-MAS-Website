@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Orbitron-ExtraBold";
+  src: url("/fonts/Orbitron/Orbitron-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "Pretendard-Medium";
+  src: url("/fonts/Pretendard/Pretendard-Medium.otf");
+}
+
+.coreValues {
+  background-color: #000;
+  height: 865px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 168px;
+}
+.coreValues > .title {
+  color: #cbcbcb;
+  font-family: "Orbitron-ExtraBold", sans-serif;
+  font-size: 64px;
+  margin-bottom: 11px;
+}
+.coreValues > .orange {
+  font-family: "Pretendard-Medium", sans-serif;
+  font-size: 19px;
+  color: #ff6723;
+  margin-left: 34px;
+  margin-bottom: 57px;
+}
+.coreValues > .corevalues_items {
+  display: grid;
+  grid-template-columns: repeat(3, 371px);
+  grid-template-rows: repeat(2, 235px);
+  color: #fff;
+  column-gap: 41px;
+  row-gap: 43px;
+}

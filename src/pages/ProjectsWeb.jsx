@@ -2,6 +2,66 @@ import ProjectsBanner from '../components/ProjectsBanner';
 import ProjectsBox from '../components/ProjectsBox';
 import '../styles/Projects.css'
 import { Link } from "react-router-dom";
+
+const projects = [
+  {
+    img: "/수화번역기.svg",
+    type:'Web',
+    year:'2025',
+    title:'수화번역기',
+    subTitle: "비장애인과 장애인의 소통 장벽을 허물어 소통을 돕는 서비스" 
+  },
+  {
+    img: "/냥냥마스맵.svg",
+    type:'Web',
+    year:'2025',
+    title:'냥냥마스맵',
+    subTitle: "길고양이를 좋아하는 사람들을 위한 길고양이 커뮤니티" 
+  },
+  {
+    img: "/우리끼리.svg",
+    type:'Web',
+    year:'2025',
+    title:'우리끼리',
+    subTitle: "학교 생활을 더 편리하고 즐겁게 만들기 위한\n우리반만의 프라이빗한 공간" 
+  },
+  {
+    img: "/인사챌린지.svg",
+    type:'Web',
+    year:'2025',
+    title:'인사챌린지',
+    subTitle: "미림의 전통인 인사를 게임으로 쉽게 배울 수 있는 서비스" 
+  },
+  {
+    img: "/STEPBYSTEP.svg",
+    type:'Web',
+    year:'2025',
+    title:'STEPBYSTEP',
+    subTitle: "건강에 한걸을 한걸음" 
+  },
+  {
+    img: "/사주보이즈.svg",
+    type:'Web',
+    year:'2025',
+    title:'사주보이즈',
+    subTitle: "사주를 보다 정확하고 간편하게 해주는 사주 명리학을 기반으로 한 사주 웹사이트" 
+  },
+  {
+    img: "/SCHOK.svg",
+    type:'Web',
+    year:'2025',
+    title:'SCHOK',
+    subTitle: "속초시 학생들에게 꼭 필요한 정보만 모은 정보 플랫폼" 
+  },
+  {
+    img: "/시그널.svg",
+    type:'Web',
+    year:'2025',
+    title:'SIGNAL',
+    subTitle: "온라인으로 한 걸음 다가가는 미림인을 위한 서비스" 
+  }
+]
+
 function ProjectsWeb() {
   return (
     <>
@@ -16,49 +76,18 @@ function ProjectsWeb() {
       </div>
       
       <div className='allProjects'>
-        <div className='twoProjects'>
-          <ProjectsBox img="/시그널.svg" type='Web' year='2025' 
-          title='SIGNAL'
-          subTitle={
-          "온라인으로 한 걸음 다가가는 미림인을 위한 서비스"} />
-          <ProjectsBox img="/인사챌린지.svg" type='Web' year='2025' 
-          title='인사챌린지'
-          subTitle={
-          "미림의 전통인 인사를 게임으로 쉽게 배울 수 있는 서비스"} />
-        </div>
-        
-        <div className='twoProjects'>
-          <ProjectsBox img="/냥냥마스맵.svg" type='Web' year='2025' 
-          title='냥냥마스맵'
-          subTitle={
-          "길고양이를 좋아하는 사람들을 위한 길고양이 커뮤니티"} />
-          <ProjectsBox img="/STEPBYSTEP.svg" type='Web' year='2025' 
-          title='STEPBYSTEP'
-          subTitle={
-          "건강에 한걸을 한걸음"} />
-        </div>
-
-        <div className='twoProjects'>
-          <ProjectsBox img="/사주보이즈.svg" type='Web' year='2025' 
-          title='사주보이즈'
-          subTitle={
-          "사주를 보다 정확하고 간편하게 해주는 사주 명리학을 기반으로 한 사주 웹사이트"} />
-          <ProjectsBox img="/SCHOK.svg" type='Web' year='2025' 
-          title='SCHOK'
-          subTitle={
-          "속초시 학생들에게 꼭 필요한 정보만 모은 정보 플랫폼"} />
-        </div>
-
-        <div className='twoProjects'>
-          <ProjectsBox img="/우리끼리.svg" type='Web' year='2025' 
-          title='우리끼리'
-          subTitle={
-          "학교 생활을 더 편리하고 즐겁게 만들기 위한\n우리반만의 프라이빗한 공간"} />
-          <ProjectsBox img="/수화번역기.svg" type='Web' year='2025' 
-          title='수화번역기'
-          subTitle={
-          "비장애인과 장애인의 소통 장벽을 허물어 소통을 돕는 서비스"} />
-        </div>
+        {
+          projects.map(item => (
+            <ProjectsBox 
+            key={item.title}
+            img={item.img}
+            type={item.type}
+            year={item.year}
+            title={item.title}
+            subTitle={item.subTitle}
+            />
+          ))
+        }
       </div>
       
 

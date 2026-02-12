@@ -46,11 +46,10 @@ a {
 
 /* 프로젝트 박스 컴포넌트 */
 .allProjects {
-    margin-bottom: 68px;
-}
-.twoProjects {
-    display: flex;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: 440px 440px;
     justify-content: center;
-    margin-top: 59px;
+    gap: 34px;
+    margin-top: 68px;
+    margin-bottom: 68px;
 }

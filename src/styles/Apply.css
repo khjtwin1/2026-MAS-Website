@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Pretendard-Medium";
+  src: url("/fonts/Pretendard/Pretendard-Medium.otf");
+}
+
+.header_apply button,
+.hero_apply button {
+  font-family: "Pretendard-Medium", sans-serif;
+  font-size: 19px;
+  color: #fff;
+  text-decoration: none;
+  width: 125px;
+  height: 52px;
+  border-radius: 1000px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  background-color: #000;
+}
+.header_apply button:hover,
+.hero_apply button:hover {
+  transition: 0.2s ease;
+  background-color: #ff6723;
+}

@@ -56,7 +56,7 @@ a.btn {
 /* 화살표 선 */
 .btn path {
   stroke: black;
-  transition: 0.2s;
+  transition: 0.2s ease;
 }
 
 /* hover */
@@ -72,4 +72,3 @@ a.btn {
 .btn:hover path {
   stroke: white;
 }
-
