@@ -1,14 +1,23 @@
 import "../styles/QnAElements.css";
 import {useState} from "react";
 
-function QnAElements({id, title, content}){
+function QnAElements({title, content}){
     const [open, setOpen] = useState(false);
+
     return(
-        <div className="qa_box">
-            <button key={id} className="qa_title" onClick={() => setOpen(id)}>
+        <div className="qa_box" onClick={() => setOpen(!open)}>
+            <div className={`qa_title ${open ? "open" : ""}`}>
                 {title}
-            </button>
-            {open === id && <div className="qa_content">{content}</div>}
+            </div>
+            <chevron
+                className={`qa_icon ${open ? "rotate" : ""}`}
+                size={22}
+            />
+            <div className={`qa_content_wrapper ${open ? "open" : ""}`}>
+                <div className="qa_content">
+                    {content}
+                </div>
+            </div>
         </div>
     );
 }
