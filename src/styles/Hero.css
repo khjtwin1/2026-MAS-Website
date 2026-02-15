@@ -5,8 +5,8 @@
 
 .hero {
   background-color: #000;
-  height: 865px;
-  padding: 270px 168px;
+  min-height: 100vh;
+  padding: 270px 10.94%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -28,7 +28,7 @@
 .texts > .orange {
   color: #ff6723;
 }
-.hero_apply {
+.hero .apply {
   margin-top: 30px;
 }
 .planet {

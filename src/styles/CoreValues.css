@@ -9,11 +9,11 @@
 
 .coreValues {
   background-color: #000;
-  height: 865px;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 168px;
+  padding: 126px 12.5%;
 }
 .coreValues > .title {
   color: #cbcbcb;

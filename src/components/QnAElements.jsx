@@ -9,10 +9,10 @@ function QnAElements({title, content}){
             <div className={`qa_title ${open ? "open" : ""}`}>
                 {title}
             </div>
-            <chevron
+            {/* <chevron
                 className={`qa_icon ${open ? "rotate" : ""}`}
                 size={22}
-            />
+            /> */}
             <div className={`qa_content_wrapper ${open ? "open" : ""}`}>
                 <div className="qa_content">
                     {content}
