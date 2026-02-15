@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "Orbitron-ExtraBold";
+    src: url("../../fonts/Orbitron/Orbitron-ExtraBold.ttf");
+}
+
+.members{
+    background-color: #000;
+    padding-top: 115px;
+    color: #fff;
+}
+.banner{
+    height: 400px;
+    width: 100%;
+    background-color: #FF8137;
+}
+.banner_title{
+    font-family: "Orbitron-ExtraBold", sans-serif;
+    font-size: 80px;
+}
+.members_grid{
+    display: grid;
+    padding: 0 17.5%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, auto);
+    row-gap: 54px;
+}

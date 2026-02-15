@@ -3,8 +3,7 @@
   src: url("/fonts/Pretendard/Pretendard-Medium.otf");
 }
 
-.header_apply button,
-.hero_apply button {
+.apply {
   font-family: "Pretendard-Medium", sans-serif;
   font-size: 19px;
   color: #fff;
@@ -16,8 +15,7 @@
   cursor: pointer;
   background-color: #000;
 }
-.header_apply button:hover,
-.hero_apply button:hover {
+.apply:hover {
   transition: 0.2s ease;
   background-color: #ff6723;
 }

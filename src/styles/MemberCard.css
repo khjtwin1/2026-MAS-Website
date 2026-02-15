@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "Pretendard-Medium"; /*15*/ /*18*/ /*14*/
+    src: url("../../fonts/Pretendard/Pretendard-Medium.otf");
+}
+@font-face {
+    font-family: "Pretendard-SemiBold"; /*24*/
+    src: url("../../fonts/Pretendard/Pretendard-SemiBold.otf");
+}
+
+.memberCard{
+    position: relative;
+    width: 380px;
+}
+.memberCard img{
+    height: 380px;
+}
+.contents {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+.contents .major{
+    font-family: "Pretendard-Medium", sans-serif;
+    font-size: 15px;
+}
+.contents .name{
+    font-family: "Pretendard-SemiBold", sans-serif;
+    font-size: 24px;
+}
+.contents .info{
+    font-family: "Pretendard-Medium", sans-serif;
+    font-size: 18px;
+}
+.contents .tags{
+    display: flex;
+    font-family: "Pretendard-Medium", sans-serif;
+    font-size: 14px;
+    gap:10px
+}
+.contents .tags p{
+    padding: 10px;
+    border-radius: 2px;
+    border: rgba(0, 0, 0, 0.33);
+    background: rgba(255, 255, 255, 0.45);
+}
