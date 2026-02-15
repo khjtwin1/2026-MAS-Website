@@ -9,18 +9,15 @@
 a.btn {
   text-decoration: none;
 }
-.mainProjects {
-  margin-bottom: 201px;
-}
-/* projects-intro */
-.projects-intro {
+
+.members-intro {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 192px 160px 117px 176px;
 }
 /* 제목 */
-.projects-intro h1 {
+.members-intro h1 {
   color: #FF6723;
   font-family: "Orbitron-Bold", sans-serif;
   font-size: 64px;
@@ -28,15 +25,15 @@ a.btn {
   margin-bottom: 27px;
 }
 /* 문구 */
-.projects-intro p {
+.members-intro p {
   color: #FFF;
   font-family: "Pretendard-Medium", sans-serif;
   font-size: 19px;
 }
 /* 자세히 보기 */
-.projects-btn {
-  width: 139px;
-  height: 42px;
+.members-btn {
+  width: 106px;
+  height: 41px;
   font-size: 17px;
   color: White;
   border: 2px solid white;
@@ -50,33 +47,28 @@ a.btn {
   transition: 0.2s ease;
 }
 /* 화살표 배경(원) */
-.projects-btn svg {
+.members-btn svg {
   background-color: white;
   border-radius: 50%;
   padding: 6px;
   transition: 0.2s ease;
 }
 /* 화살표 선 */
-.projects-btn path {
+.members-btn path {
   stroke: black;
   transition: 0.2s ease;
 }
 
 /* hover */
-.projects-btn:hover {
+.members-btn:hover {
   color: #FF6723;
   border: 2px solid #FF6723;
 }
 /* 화살표 배경(원) */
-.projects-btn:hover svg {
+.members-btn:hover svg {
   background-color: #FF6723;
 }
 /* 화살표 선 */
-.projects-btn:hover path {
+.members-btn:hover path {
   stroke: white;
-}
-
-/* 이미지 슬라이드 */
-.projects-slide1 {
-  margin-bottom: 27px;
 }
