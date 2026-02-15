@@ -1,5 +1,4 @@
 @font-face {
-<<<<<<< HEAD
   font-family: "Orbitron-SemiBold";
   src: url("/fonts/Orbitron/Orbitron-SemiBold.ttf");
 }
@@ -18,12 +17,4 @@
 }
 html {
   scroll-behavior: smooth;
-=======
-    font-family: "Orbitron-SemiBold";
-    src: url("../fonts/Orbitron/Orbitron-SemiBold.ttf");
-}
-*{
-    color: #CBCBCB;
-    font-family: "Orbitron-SemiBold", sans-serif;
->>>>>>> upstream/main
 }
