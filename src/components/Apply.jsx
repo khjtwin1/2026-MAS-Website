@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
 import "../styles/Apply.css"
 
-function Apply({ className }) {
+function Apply() {
   return (
-    <div className={className}>
-      <button>지원하기</button>
-    </div>
+    <button className="apply">지원하기</button>
   );
 }
 

@@ -31,7 +31,7 @@ function Header() {
         <div className="header_socialLinks">
           <SocialLinks />
         </div>
-        <Apply className="header_apply" />
+        <Apply/>
     </div>
   );
 }

@@ -6,15 +6,19 @@
     font-family: "Pretendard-Medium";
     src: url("../fonts/Pretendard/Pretendard-Medium.otf");
 }
-a.btn {
-  text-decoration: none;
+body {
+  background: black;
 }
-
+.mainMembers {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.50) 15.87%, rgba(255, 103, 35, 0.50) 52.14%, rgba(0, 0, 0, 0.50) 87.5%);
+  margin-bottom: 100px;
+}
 .members-intro {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 192px 160px 117px 176px;
+  margin: 172px 160px 117px 176px;
+  
 }
 /* 제목 */
 .members-intro h1 {
@@ -33,7 +37,7 @@ a.btn {
 /* 자세히 보기 */
 .members-btn {
   width: 106px;
-  height: 41px;
+  height: 44px;
   font-size: 17px;
   color: White;
   border: 2px solid white;
@@ -45,12 +49,15 @@ a.btn {
   font-family: "Pretendard-Medium", sans-serif;
   gap: 10px;
   transition: 0.2s ease;
+  text-decoration: none;
 }
 /* 화살표 배경(원) */
 .members-btn svg {
   background-color: white;
   border-radius: 50%;
   padding: 6px;
+  width: 1.5em;
+  height: 1.5em;
   transition: 0.2s ease;
 }
 /* 화살표 선 */
