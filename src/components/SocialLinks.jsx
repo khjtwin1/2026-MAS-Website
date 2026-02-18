@@ -1,5 +1,5 @@
-// import "../styles/SocialLinks.css";
-// import SocialLinksItem from "../components/SocialLinksItem";
+import "../styles/SocialLinks.css";
+import SocialLinksItem from "../components/SocialLinksItem";
 
 const ask = "/ask.svg";
 const instagram = "/instagram.svg";

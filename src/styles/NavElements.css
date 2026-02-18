@@ -1,8 +1,20 @@
 @font-face {
-    font-family: "Orbitron-SemiBold";
-    src: url("../fonts/Orbitron/Orbitron-SemiBold.ttf");
+  font-family: "Orbitron-SemiBold";
+  src: url("/fonts/Orbitron/Orbitron-SemiBold.ttf");
 }
-*{
-    color: #CBCBCB;
-    font-family: "Orbitron-SemiBold", sans-serif;
+.navElements.highlight {
+  color: #ff6723;
+}
+.navElements {
+  font-family: "Orbitron-SemiBold", sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+.navElements:hover {
+  transition: 0.2s ease;
+  color: #ff6723;
+}
+html {
+  scroll-behavior: smooth;
 }

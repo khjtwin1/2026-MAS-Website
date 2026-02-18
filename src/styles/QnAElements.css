@@ -9,21 +9,42 @@
 
 .qa_box{
     width: 812px;
-}
-.qa_title{
-    all: unset;
-    font-family: "Pretendard-Semibold", sans-serif;
-    font-size: 18px;
-    padding: 20px 0 20px 32px;
-    align-items: center;
-    font-family: "Pretendard-Semibold", sans-serif;
-    font-size: 18px;
-    width: 100%;
     border: 1px solid #6A6A6A;
     border-radius: 15px;
+    margin-top: 22px;
+    cursor: pointer;
+}
+.qa_title{
+    font-family: "Pretendard-Semibold", sans-serif;
+    font-size: 18px;
+    padding: 20px 32px;
+    border-radius: 15px 15px 0 0;
+}
+.qa_title.open{
+    /* 1 */
+    background: rgba(255, 110, 0, 0.35);
+    border-bottom: 1px solid #6A6A6A;
+
+    /* 2 */
+    /* border-bottom: 1px solid #FF6723; */
 }
 .qa_content{
     white-space: pre-line;
     font-family: "Pretendard";
     font-size: 16px;
+    padding: 20px 32px;
+    color: #BFBFBF;
+    line-height: 26px;
+}
+
+.qa_content_wrapper {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+
+.qa_content_wrapper.open {
+    max-height: 500px;
+    opacity: 1;
 }

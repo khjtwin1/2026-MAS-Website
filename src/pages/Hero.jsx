@@ -14,7 +14,7 @@ function Hero() {
               <p>SHARE<br/>YOUR</p>
               <p className="orange">ABILITY</p>
             </h1>
-            <Apply className="hero_apply" />
+            <Apply/>
           </div>
           <div className="planet">
             <img className="mars" src={mars} alt="행성" />

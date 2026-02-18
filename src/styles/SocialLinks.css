@@ -1,0 +1,10 @@
+.nav_links {
+  align-items: center;
+  list-style: none;
+  display: flex;
+  gap: 26px;
+}
+.nav_links > li > img {
+  height: 24px;
+  cursor: pointer;
+}

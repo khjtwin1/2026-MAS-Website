@@ -1,13 +1,13 @@
 import '../styles/ProjectsBox.css';
 
-function ProjectsBox({img, type, year, title, subTitle}) {
+function ProjectsBox({image, type, year, title, subTitle}) {
   return (
     // 전체 상자
     <div className="project-box">
       {/* 배경 이미지 */}
       <div 
         className="project-image" 
-        style={{ backgroundImage: `url(${img})` }}
+        style={{ backgroundImage: `url(${image})` }}
       >
         {/* 프로젝트 타입 & 연도 컨테이너 */}
         <div className="project-tag-wrap">

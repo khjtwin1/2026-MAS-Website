@@ -1,14 +1,16 @@
 import '../styles/Slider.css';
-function Slider({slideProjects, width, height, direction}) {
+function Slider({slideList,direction, name}) {
   return (
     <div className='slider'>
-      <div className='slide-track' style={{animationDirection:direction}}>
-        {slideProjects.map(item => 
-            <img style={{width:`${width}px`, height:`${height}px`}} key={item.img} src={item.img}/>
-        )}
-        {slideProjects.map(item => 
-            <img style={{width:`${width}px`, height:`${height}px`}} key={item.img} src={item.img}/>
-        )}
+      {/* direction 슬라이드 방향   normal: 오른쪽 -> 왼쪽   reverse: 왼쪽 -> 오른쪽 */}
+      <div className='slide-track' style={{animationDirection: direction}}>
+        {[...slideList, ...slideList].map((item, index) => (
+          <img
+            key={index}
+            className={name}
+            src={item.image}
+          />
+        ))}
       </div>
     </div>
         

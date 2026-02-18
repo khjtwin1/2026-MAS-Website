@@ -1,47 +1,12 @@
 import Slider from '../components/Slider';
 import '../styles/MainProjects.css';
 import { Link } from "react-router-dom";
+import projectsList from '../../data/projectsList';
 
-const slideProjects1 = [
-  {
-    img: "/Dalab.svg"
-  },
-  {
-    img: "/Momento.svg"
-  },
-  {
-    img: "/Signal.svg"
-  },
-  {
-    img: "/Oleum.svg"
-  },
-  {
-    img: "/POP!CK.svg"
-  },
-  {
-    img: "/ReadGo.svg"
-  },
-]
-const slideProjects2 = [
-  {
-    img: "/SajuBoys.svg"
-  },
-  {
-    img: "/GreetingChallenge.svg"
-  },
-  {
-    img: "/STEPBYSTEP.svg"
-  },
-  {
-    img: "/Ulikkili.svg"
-  },
-  {
-    img: "/SignLanguageTranslator.svg"
-  },
-  {
-    img: "/Nyangnyangmasmap.svg"
-  },
-]
+const half = Math.ceil(projectsList.length / 2);
+
+const slideProjectsUp = projectsList.slice(0, half);
+const slideProjectsDown = projectsList.slice(half);
 
 function MainProjects() {
   return (
@@ -58,12 +23,13 @@ function MainProjects() {
         </svg></Link>
       </div>
       
-      <div className='projects-slide1'><Slider slideProjects={slideProjects1} width={387} height={219} direction="reverse" /></div>
-      <Slider slideProjects={slideProjects2} width={387} height={219} direction="normal" /> 
+      <div className='projects-slide1'>
+        <Slider slideList={slideProjectsUp} direction="reverse" name='projects-slideUp'/>
+      </div>
+      <Slider slideList={slideProjectsDown} direction="normal" name='projects-slideDown'/> 
       
       
     </div>
-      // normal   reverse
         
   );
 }
