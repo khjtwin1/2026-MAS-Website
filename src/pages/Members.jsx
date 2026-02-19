@@ -1,6 +1,8 @@
 import Header from "../components/Header.jsx";
 import MemberCard from "../components/MemberCard.jsx";
 import membersList from "../../data/membersList.js";
+import MemberPictureElement from "../components/MembersPictureElement";
+import Banner from "../components/Banner";
 import "../styles/Members.css";
 import { useState } from "react";
 
@@ -15,15 +17,13 @@ function Members(){
         <>
             <Header />
             <div className="members">
-                <div className="banner">
-                    
-                    <p className="banner_title">MEMBERS</p>
-                    <p>MAS를 빛내고 지금까지<br/>이끌어 온 부원들입니다.</p>
+                <div>
+                    <Banner bannerIMG="/member_banner.svg" h1Title="MEMBERS" pExplanation1="MAS를 빛내고 지금까지 " pExplanation2="이끌어 온 부원들 입니다."/>
                 </div>
 
                 <div className="generation_buttons">
                     {[4,5,6].map((g) => (
-                        <button key={g} className={`genBtn ${gen === g ? "selected" : ""}`} onClick={() => setGen(g)}>
+                        <button key={g} className={`yearBtn ${gen === g ? "selected" : ""}`} onClick={() => setGen(g)}>
                             {g}기
                         </button>
                     ))}
@@ -32,15 +32,14 @@ function Members(){
                 <div className="members_grid">
                     {gen === 6 ? <p className="comingSoon">6기 모집중🔥</p> : (
                             filteredMembers.map((m) => (
-                                <MemberCard
+                                <MemberPictureElement
                                     key={m.name}
-                                    image={m.image}
-                                    generation={m.generation}
-                                    name={m.name}
-                                    major={m.major}
-                                    role={m.role}
-                                    tag1={m.tag1}
-                                    tag2={m.tag2}
+                                    memberPicture={m.image}
+                                    memberClass={m.major === 1 ? "뉴미디어소프트웨어과" : "뉴미디어디자인과"}
+                                    memberName={m.name}
+                                    memberYear={`${m.generation}기  ${m.role}`}
+                                    memberFea1={m.tag1}
+                                    memberFea2={m.tag2}
                                 />
                             ))
                         )

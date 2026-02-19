@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "Orbitron-ExtraBold";
+    src: url("src/fonts/Orbitron/Orbitron-ExtraBold.ttf");
+}   
+body {
+    background-color: black;
+    color: #ffffff;
+}
+/* 마스 전체 css------------------ */
+.ourPrizeSection {
+    display: flex;
+
+    position: relative;
+}
+/* 마스 배경 행성 사진 css------------------ */
+.ourprize_background {
+    position: absolute;
+    top: 93px;
+
+    height: 583px;
+    width: auto;
+
+    z-index: 1;
+}
+/* 마스 제목+설명+버튼 css------------------ */
+.ourPrize {
+    margin-top: 334px;
+    margin-left: 168px;   
+    background: rgba(55, 55, 55, 0);
+    
+    z-index: 2;
+}
+/* 마스 OUR PRIZE css------------------ */
+.our {
+    color: #CBCBCB;
+    font-family: "Orbitron-ExtraBold", sans-serif;
+    font-size: 64px;
+
+    background-color: transparent;
+}
+
+.prize {
+    color: #FF6723;
+    font-family: "Orbitron-ExtraBold", sans-serif;
+    font-size: 64px;
+
+    background-color: transparent;
+}
+/* 마스 설명 css------------------ */
+.explanation {
+    margin-top: 19px;
+    background-color: transparent;
+    width: 340px;
+}
+/* 마스 상 더보기 버튼 css------------------ */
+.morePrize{
+    display: flex;
+    align-items: center;
+
+    margin-top: 174px;
+    padding: 12px 7px 12px 10px;
+
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 20px;
+
+    color:#ffffff;
+
+    width: 212px;
+    height: 43px;
+
+    font-size: 17px;
+}
+
+.morePrize:hover {
+    color: #FF6723;
+    border-color: #FF6723;
+    transition: 0.2s ease;
+    .nextButton{
+        transition: 0.2s ease;
+        background-color: #FF6723;
+        color: white
+    }
+    
+}
+
+.nextButton {
+    background-color: white;
+    padding: 6px 6px 6px 6px;
+    margin-left: 11px;
+    border-radius: 20px;
+
+    width: 25px;
+    height: 25px;
+
+    transition: 0.2s ease;
+}
+/* 마스 단체 사진 css------------------ */
+.ourpPicture {
+    margin-left: 130px;
+    margin-top: 222px;
+}
+
+.ourprizePicture {
+    width: 777px;
+    height: auto;
+}

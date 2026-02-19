@@ -1,0 +1,17 @@
+.PrizePictureElement {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+.picture {
+  /* 형태 잡기 */
+  width: 304px;
+  height: 195px;
+  border-radius: 10px;
+  /* 강제 초기화 */
+  margin: 0px;
+  margin-top: 43px;
+  display: flex;
+}
+

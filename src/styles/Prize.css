@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Orbitron-ExtraBold";
+    src: url("2026-MAS-Website/fonts/Orbitron/Orbitron-ExtraBold.ttf");
+
+    font-family: "Pretendard-Medium";
+    src: url("2026-MAS-Website/fonts/Pretendard/Pretendard-Medium.otf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* 년도 버튼 부분 css------------------------- */
+.Year {
+    display: flex;
+    justify-content: center;
+    gap: 34px;
+    margin-top: 75px;
+    margin-bottom: 20px;
+}
+/* 상장 사진 부분 css------------------------- */
+.prizePicture {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+}
