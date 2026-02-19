@@ -7,11 +7,11 @@ const projectsList = [
     subTitle: "비장애인과 장애인의 소통 장벽을 허물어 소통을 돕는 서비스" 
   },
   {
-    image: "/Signal.svg",
-    type:'WEB',
+    image: "/Dalab.svg",
+    type:'APP',
     year:'2025',
-    title:'SIGNAL',
-    subTitle: "온라인으로 한 걸음 다가가는 미림인을 위한 서비스" 
+    title:'다랩',
+    subTitle: "칭찬과 격려를 시각화 해주는 칭찬도장 시스템" 
   },
   {
     image: "/Ulikkili.svg",
@@ -70,11 +70,11 @@ const projectsList = [
     subTitle: "속초시 학생들에게 꼭 필요한 정보만 모은 정보 플랫폼" 
   },
   {
-    image: "/Dalab.svg",
-    type:'APP',
+    image: "/Signal.svg",
+    type:'WEB',
     year:'2025',
-    title:'다랩',
-    subTitle: "칭찬과 격려를 시각화 해주는 칭찬도장 시스템" 
+    title:'SIGNAL',
+    subTitle: "온라인으로 한 걸음 다가가는 미림인을 위한 서비스" 
   },
   {
     image: "/Nyangnyangmasmap.svg",
