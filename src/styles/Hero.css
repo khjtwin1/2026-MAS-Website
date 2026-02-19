@@ -2,11 +2,10 @@
   font-family: "Orbitron-Black";
   src: url("/fonts/Orbitron/Orbitron-Black.ttf");
 }
-
-.hero {
+#hero {
   background-color: #000;
   min-height: 100vh;
-  padding: 270px 10.94%;
+  padding: 200px 10.94%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -20,22 +19,20 @@
 .texts {
   font-family: "Orbitron-Black", sans-serif;
   font-size: 80px;
-  background-color: #000;
-}
-.texts > p {
   color: #cbcbcb;
+  width: 390px;
+  height: 300px;
 }
-.texts > .orange {
+.texts .orange {
   color: #ff6723;
 }
-.hero .apply {
+#hero .apply {
   margin-top: 30px;
 }
 .planet {
   position: relative;
   width: 660px;
   height: 323px;
-  /* border: 1px solid yellow; */
 }
 .planet img {
   position: absolute;
