@@ -10,15 +10,15 @@ body {
   background: black;
 }
 .mainMembers {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.50) 15.87%, rgba(255, 103, 35, 0.50) 52.14%, rgba(0, 0, 0, 0.50) 87.5%);
-  margin-bottom: 100px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.50) 20%, rgba(255, 103, 35, 0.50) 55%, rgba(0, 0, 0, 0.50) 90%);
+  padding: 115px 0;
+  align-items: center;
 }
 .members-intro {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 172px 160px 117px 176px;
-  
+  padding: 0 210px 74px;
 }
 /* 제목 */
 .members-intro h1 {
