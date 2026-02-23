@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "Orbitron-ExtraBold";
+    src: url("../fonts/Orbitron/Orbitron-ExtraBold.ttf");
+}
+@font-face {
+    font-family: "Pretendard-Medium";
+    src: url("../fonts/Pretendard/Pretendard-Medium.otf");
+}
+@font-face {
+    font-family: "Pretendard-bold";
+    src: url("../fonts/Pretendard/Pretendard-bold.otf");
+}
+
+.banner {
+    height: 320px;
+    /* 배경 이미지 설정 */
+    background-image: url("/titleBackground.svg");
+
+    /* 이미지 반복 x */
+    background-repeat: no-repeat;
+    /* 이미지 정중앙 */
+    background-position: center;
+    /* 빈틈없이 채우기 */
+    background-size: cover; 
+    
+    
+    /* 텍스트 정렬 */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.title {
+    background: none;
+}
+/* PROJECTS */
+.title h1 {
+    background: none;
+    font-family: "Orbitron-ExtraBold",sans-serif;
+    font-size: 64px;
+    color: white;
+    margin-bottom: 26px;
+}
+/* 부제목 */
+.title p {
+    background: none;
+    font-family: "Pretendard-Medium",sans-serif;
+    font-size: 17px;
+    color: #C3C3C3;
+}

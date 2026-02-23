@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "Orbitron-Bold";
+    src: url("../fonts/Orbitron/Orbitron-Bold.ttf");
+}
+@font-face {
+    font-family: "Pretendard-Medium";
+    src: url("../fonts/Pretendard/Pretendard-Medium.otf");
+}
+body {
+  background: black;
+}
+.mainMembers {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.50) 15.87%, rgba(255, 103, 35, 0.50) 52.14%, rgba(0, 0, 0, 0.50) 87.5%);
+  margin-bottom: 100px;
+}
+.members-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 172px 160px 117px 176px;
+  
+}
+/* 제목 */
+.members-intro h1 {
+  color: #FF6723;
+  font-family: "Orbitron-Bold", sans-serif;
+  font-size: 64px;
+  /* 제목과 문구 사이 간격 */
+  margin-bottom: 27px;
+}
+/* 문구 */
+.members-intro p {
+  color: #FFF;
+  font-family: "Pretendard-Medium", sans-serif;
+  font-size: 19px;
+}
+/* 자세히 보기 */
+.members-btn {
+  width: 106px;
+  height: 44px;
+  font-size: 17px;
+  color: White;
+  border: 2px solid white;
+  border-radius: 100px;
+  padding: 2px 0px 2px 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Pretendard-Medium", sans-serif;
+  gap: 10px;
+  transition: 0.2s ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+/* 화살표 배경(원) */
+.members-btn svg {
+  background-color: white;
+  border-radius: 50%;
+  padding: 6px;
+  width: 1.5em;
+  height: 1.5em;
+  transition: 0.2s ease;
+}
+/* 화살표 선 */
+.members-btn path {
+  stroke: black;
+  transition: 0.2s ease;
+}
+
+/* hover */
+.members-btn:hover {
+  color: #FF6723;
+  border: 2px solid #FF6723;
+}
+/* 화살표 배경(원) */
+.members-btn:hover svg {
+  background-color: #FF6723;
+}
+/* 화살표 선 */
+.members-btn:hover path {
+  stroke: white;
+}
