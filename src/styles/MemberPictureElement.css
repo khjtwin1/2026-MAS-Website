@@ -1,14 +1,28 @@
 @font-face {
     font-family: "Pretendard-Medium";
-    src: url("src/fonts/Pretendard/Pretendard-Medium.otf");
-
-    font-family: "Pretendard-SemiBold";
-    src: url("src/fonts/Pretendard/Pretendard-SemiBold.otf");
+    src: url("../../fonts/Pretendard/Pretendard-Medium.otf");
 }  
+@font-face {
+    font-family: "Pretendard-SemiBold";
+    src: url("../../fonts/Pretendard/Pretendard-SemiBold.otf");
+}
 
 .card{
     position: relative;
     overflow: hidden;
+    transition: all 1s ease;
+}
+
+.card:hover .memberFea1,
+.card:hover .memberFea2 {
+    transition: all 0.3s ease;
+    background-color: rgba(255, 157, 0, 0.3);
+    border-color: rgba(255,255,255,0.25);
+}
+
+.card:hover .memberOverlay {
+    transition: all 1s ease;
+    background: rgba(0,0,0,0.0);
 }
 
 .memberOverlay {
@@ -56,6 +70,7 @@
 }
 
 .memberFea1 {
+    transition: all 0.3s ease;
     font-size: 11px;
     font-family: "Pretendard-Medium", sans-serif;
     padding: 10px;
@@ -65,6 +80,7 @@
 }
 
 .memberFea2 {
+    transition: all 0.3s ease;
     font-size: 11px;
     font-family: "Pretendard-Medium", sans-serif;
     padding: 10px;
