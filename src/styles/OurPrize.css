@@ -1,7 +1,17 @@
+@keyframes spin {
+  from {
+    transform: rotate(0deg); /* 0도에서 시작 */
+  }
+  to {
+    transform: rotate(360deg); /* 360도까지 회전 */
+  }
+}
+
 @font-face {
     font-family: "Orbitron-ExtraBold";
     src: url("src/fonts/Orbitron/Orbitron-ExtraBold.ttf");
 }   
+
 body {
     background-color: black;
     color: #ffffff;
@@ -16,11 +26,12 @@ body {
 .ourprize_background {
     position: absolute;
     top: 93px;
+    
 
     height: 583px;
     width: auto;
 
-    z-index: 1;
+    z-index: -1;
 }
 /* 마스 제목+설명+버튼 css------------------ */
 .ourPrize {
@@ -105,3 +116,54 @@ body {
     width: 777px;
     height: auto;
 }
+/* 마스 위성 css------------------ */
+.miniTitan1 {
+    position: absolute;
+    animation: spin 10s linear infinite;
+    transform-origin: 0 300px;
+    
+    width: 20px;
+    height: auto;
+    
+    z-index: 3;
+}
+.miniTitan2 {
+    position: absolute;
+    animation: spin 10s linear infinite;
+    transform-origin: 0 300px;      
+
+    width: 20px;
+    height: auto;
+    
+    animation-delay: -4.5s;
+    z-index: 3;
+}
+.miniTitan3 {
+    position: absolute;
+    animation: spin 10s linear infinite;
+    transform-origin: 0 237px; 
+
+    width: 20px;
+    height: auto;
+
+    animation-delay: -7s;
+    z-index: 3;
+}
+/* 행성 중심 설정 */
+.planet_center1 {
+    position: absolute;
+    top: 85px;
+    left: 201px;
+
+    z-index: 3;
+}
+
+.planet_center2 {
+    position: absolute;
+    top: 149px;
+    left: 201px;
+
+
+    z-index: 3;
+}
+

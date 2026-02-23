@@ -6,11 +6,24 @@ function OurPrize() {
   const nextButtonIMG = "/ourprize_nextButton.svg";
   const everyPictureIMG = "/ourprize_picture.svg";
   const planetIMG = "/ourprize_planet.svg";
+  const miniTitanIMG = "/miniTitan.svg";
 
   return (
     <section id="ourPrize">
       <div className="ourPrizeSection">
-        <img src={planetIMG} alt="" className="ourprize_background"/>
+        <div className="planet_wrapper">
+          <img src={planetIMG} alt="" className="ourprize_background"/>
+          <div className="planet_center1">
+            <img src={miniTitanIMG} alt="" className="miniTitan1"/>
+            <img src={miniTitanIMG} alt="" className="miniTitan2"/> 
+               
+          </div>
+          <div className="planet_center2">
+            <img src={miniTitanIMG} alt="" className="miniTitan3"/> 
+          </div>
+        </div>
+        
+        
 
         <div className="ourPrize">
           <h1 className="our">OUR</h1>

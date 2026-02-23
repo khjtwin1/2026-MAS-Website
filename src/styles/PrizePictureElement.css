@@ -1,17 +1,48 @@
+@font-face {
+    font-family: "Pretendard-Medium";
+    src: url("2026-MAS-Website/fonts/Pretendard/Pretendard-Medium.otf");
+}
+
 .PrizePictureElement {
   display: flex;
   margin: 0px;
   padding: 0px;
+  position: relative;
+  overflow: hidden;
 }
 
 .picture {
   /* 형태 잡기 */
   width: 304px;
   height: 195px;
-  border-radius: 10px;
   /* 강제 초기화 */
   margin: 0px;
   margin-top: 43px;
-  display: flex;
+  border-radius: 15px;
+  /* 사진 꽉 차게하는 코드 */
+  object-fit: cover;
 }
 
+.overlayText {
+  position: absolute;
+  /* 아래에 고정 */
+  bottom: 14px;
+  left:22px;
+  width: auto;
+  /* 폰트 설정 등등 */
+  color: white;
+  font-family: "Pretendard-Medium", sans-serif;
+  font-size: 19px;
+  /* 대충 안보이게 하는 코드 */
+  opacity: 0;
+  transition: 0.3s;
+  border-radius: 15px;
+}
+/* 호버됬을때 변하는 코드 */
+.PrizePictureElement:hover .overlayText {
+  opacity: 1;
+}
+
+.PrizePictureElement:hover .picture {
+  filter: brightness(56%);
+}

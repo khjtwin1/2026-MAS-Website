@@ -1,11 +1,18 @@
 import { useNavigate } from "react-router-dom"; 
 import Header from "../components/Header";
+import prizeList from "../../data/prizeList.js";
 import PrizeYearElement from "../components/PrizeYearElement";
 import PrizePictureElement from "../components/PrizePictureElement";
 import Banner from "../components/Banner";
 import "../styles/Prize.css"
+import { useState } from "react";
 
 function Prize() {
+    const [gen, setGen] = useState(2026);
+    const filteredPrizes = prizeList.filter(
+        (p) => p.year === gen
+    );
+
   return (
     <div>
         <div>
@@ -13,28 +20,23 @@ function Prize() {
         </div>
 
         <div className="Year">
-            <PrizeYearElement Year="2026" />
-            <PrizeYearElement Year="2025" />
-            <PrizeYearElement Year="2024" />
-        </div>
-            
-        <div className="prizePicture">
-            <PrizePictureElement PictureElement="/ExPrizePic.svg" />
-            <PrizePictureElement PictureElement="/ExPrizePic.svg" />
-            <PrizePictureElement PictureElement="/ExPrizePic.svg" />
+            {[2024,2025,2026].map((g) => (
+                <button key={g} className={`yearBtn ${gen === g ? "selected" : ""}`} onClick={() => setGen(g)}>
+                    {g}
+                </button>
+            ))}
         </div>
 
-        <div className="prizePicture">
-            <PrizePictureElement PictureElement="/ExPrizePic.svg" />
-            <PrizePictureElement PictureElement="/ExPrizePic.svg" />
-            <PrizePictureElement PictureElement="/ExPrizePic.svg" />
+        <div className="prize_grid">
+            {filteredPrizes.map((p, index) => (
+                <PrizePictureElement
+                    key={index}
+                    PictureElement={p.image}
+                    explanationElement={p.explanation}
+                />
+            ))}
         </div>
-
-        <div className="prizePicture">
-            <PrizePictureElement PictureElement="/ExPrizePic.svg" />
-            <PrizePictureElement PictureElement="/ExPrizePic.svg" />
-            <PrizePictureElement PictureElement="/ExPrizePic.svg" />
-        </div>
+                
     </div>  
   );
 }
