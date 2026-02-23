@@ -7,8 +7,8 @@ function Banner({ bannerIMG, h1Title, pExplanation1, pExplanation2 }) {
   };
   return (
     <div className="bannerAll" style={bannerStyle}>
-        <h1 className="bannerTitle">{h1Title}</h1>
-        <p className="bannerExplanation">{pExplanation1}<br/>{pExplanation2}</p>
+        <h1 className="bannerTitle" style={{ color: "#fff" }}>{h1Title}</h1>
+        <p className="bannerExplanation" style={{ color: "#C3C3C3" }}>{pExplanation1}<br/>{pExplanation2}</p>
       
     </div>
   );

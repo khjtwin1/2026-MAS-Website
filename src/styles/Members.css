@@ -17,6 +17,7 @@
     background-color: #000;
     padding-top: 115px;
     color: #fff;
+    position: relative;
 }
 .banner{
     height: 400px;

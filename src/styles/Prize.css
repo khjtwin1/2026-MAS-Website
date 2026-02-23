@@ -12,6 +12,10 @@ body {
     padding: 0;
 }
 
+.prize{
+    padding-top: 115px;
+    padding-bottom: 115px;
+}
 /* 년도 버튼 부분 css------------------------- */
 .Year {
     display: flex;
@@ -31,7 +35,7 @@ body {
 .prize_grid {
     display: grid;
     padding: 0 17.5%;
-    grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, auto);
-    row-gap: 43px;
+    row-gap: 10px;
+    column-gap: 2px;
 }

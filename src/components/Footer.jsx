@@ -8,7 +8,7 @@ const navItems = [
   { text: "MEMBERS", path: "#members" },
   { text: "PROJECTS", path: "#projects" },
   { text: "Q&A", path: "#qna" },
-  { text: "JOIN THE CREW", path: "#" },
+  { text: "JOIN THE CREW", path: "https://forms.gle/CzsdLkFV5vc36nGN6", external: true },
 ];
 
 function Footer() {
@@ -32,7 +32,7 @@ function Footer() {
         <ul className="nav_list">
           {navItems.map((item) => (
             <NavElements
-              key={item.text} text={item.text} path={item.path} isHighlight={item.text === "JOIN THE CREW"}
+              key={item.text} text={item.text} path={item.path} external={item.external}
             />
           ))}
         </ul>

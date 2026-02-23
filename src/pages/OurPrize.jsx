@@ -23,9 +23,7 @@ function OurPrize() {
           </div>
         </div>
         
-        
-
-        <div className="ourPrize">
+        <div className="ourPrize-left">
           <h1 className="our">OUR</h1>
           <h1 className="prize">PRIZE</h1>
 

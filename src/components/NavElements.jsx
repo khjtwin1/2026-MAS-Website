@@ -1,21 +1,32 @@
-  import { Link } from "react-router-dom";
-  import "../styles/NavElements.css";
+import { useNavigate } from "react-router-dom";
+import "../styles/NavElements.css";
 
-  function NavElements({ text, path, isHighlight }) {
-    const className = isHighlight ? "navElements highlight" : "navElements";
-      if(path.startsWith("#")){
-        return (
-          <li>
-            <a className={className} href={path}>{text}</a>
-          </li>
-        );
-      } else {
-        return (
-          <Link className={className} to={path}>
-            {text}
-          </Link>
-        );
-      }
-  }
+function NavElements({ text, path, external }) {
+  const navigate = useNavigate();
 
-  export default NavElements;
+  const handleClick = (e) => {
+    if (external) return;
+    e.preventDefault();
+    if (path.startsWith("#")) {
+      navigate("/" + path);
+    } else {
+      navigate(path);
+    }
+  };
+
+  return (
+    <li>
+      <a
+        href={path}
+        className="navElements"
+        onClick={handleClick}
+        target={external ? "_blank" : undefined}
+        rel={external ? "noopener noreferrer" : undefined}
+      >
+        {text}
+      </a>
+    </li>
+  );
+}
+
+export default NavElements;

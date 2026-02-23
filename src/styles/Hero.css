@@ -2,7 +2,7 @@
   font-family: "Orbitron-Black";
   src: url("/fonts/Orbitron/Orbitron-Black.ttf");
 }
-#hero {
+#vision {
   background-color: #000;
   min-height: 100vh;
   padding: 200px 10.94%;
@@ -22,6 +22,7 @@
   color: #cbcbcb;
   width: 390px;
   height: 300px;
+  margin-bottom: 20px;
 }
 .texts .orange {
   color: #ff6723;

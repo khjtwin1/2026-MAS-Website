@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import "../styles/Header.css";
 import NavElements from "./NavElements";
 import SocialLinks from "./SocialLinks";
@@ -5,18 +6,23 @@ import Apply from "./Apply";
 
 const navItems = [
   { text: "VISION", path: "#vision" },
-  { text: "PRIZE", path: "/" },
-  { text: "MEMBERS", path: "/" },
-  { text: "PROJECTS", path: "/" },
+  { text: "PRIZE", path: "#ourPrize" },
+  { text: "MEMBERS", path: "#members" },
+  { text: "PROJECTS", path: "#projects" },
   { text: "Q&A", path: "#qna" },
 ];
 
-
 function Header() {
   const logo = "/logo.svg";
+  const navigate = useNavigate();
+  const handleLogoClick = () => {
+    navigate("/");
+    window.scrollTo(0, 0);
+  };
+
   return (
       <div className="header">
-        <div className="header_logo">
+        <div className="header_logo" onClick={handleLogoClick}>
           <img src={logo} alt="로고" />
           <div className="logoText">
             <p className="logo">MAS</p>
