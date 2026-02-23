@@ -8,7 +8,7 @@ function Hero() {
   const orangeRing = "/orangeRing.svg"
   
   return (
-    <section id="hero">
+    <section id="vision">
       <div className="heroRow">
         <div className="left">
           <div className="texts">

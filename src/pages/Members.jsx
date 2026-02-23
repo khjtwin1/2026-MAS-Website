@@ -1,17 +1,22 @@
+import { useState } from "react";
+import { useEffect } from "react";
 import Header from "../components/Header.jsx";
-import MemberCard from "../components/MemberCard.jsx";
 import membersList from "../../data/membersList.js";
 import MemberPictureElement from "../components/MembersPictureElement";
 import Banner from "../components/Banner";
 import Members_feature from "../components/Members_feature.jsx";
 import "../styles/Members.css";
 import WeAreMAS from "./WeAreMAS.jsx";
+import Footer from "../components/Footer.jsx";
 
 function Members(){
     const [gen, setGen] = useState(5);
     const filteredMembers = membersList.filter(
         (m) => m.generation === gen
     );
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     
     // const members_banner = "/members_banner.svg";
 
@@ -31,7 +36,6 @@ function Members(){
                     ))}
                 </div>
 
-                
                 {gen === 6 ? 
                     <div className="member_sixYear">    
                         <div className="member_bg"></div>
@@ -50,7 +54,6 @@ function Members(){
                             </div>
                         </div>
                         
-                        
                     </div>
                     : (
                         <div className="members_grid">
@@ -64,12 +67,13 @@ function Members(){
                                     memberFea1={m.tag1}
                                     memberFea2={m.tag2}
                                 />
-                                
                             ))}
                         </div>
                         )
                     }
+                    <WeAreMAS/>
             </div>
+            <Footer/>
         </>
     )
 }

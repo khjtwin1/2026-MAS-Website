@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "../styles/MembersMain.css";
 import Apply from "../components/Apply.jsx";
-import membersList from "../../data/membersList.js";
+// import membersList from "../../data/membersList.js";
 
 function MembersMain(){
     const arrow = "/arrow.svg";

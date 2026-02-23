@@ -11,7 +11,6 @@ function App() {
       <Route path="/ourPrize" element={<OurPrize />}/>
       <Route path="/prize" element={<Prize />}/>
       <Route path="/members" element={<Members />}/>
-      Rou
     </Routes>
   );
 }
