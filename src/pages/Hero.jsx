@@ -20,6 +20,7 @@ function Hero() {
                 ],
                 autoStart: true,
                 loop: true,
+                pauseFor: 2000,
               }}
             />
           </div>

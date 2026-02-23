@@ -52,14 +52,15 @@
   bottom: 0;
   width: 100%;
   height: 530px;
-  background: linear-gradient(#000, #FF6E00);
+  /* background: linear-gradient(#000, #FF6E00); */
+  background: #ff6723;
   opacity: 0.3;
 }
 
 .wave {
   position: absolute;
   top: 70%;
-  left: 50%;
+  left: 35%;
   width: 200vw;
   height: 200vw;
   margin-left: -100vw;
@@ -78,4 +79,51 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.hexagon {
+  position: absolute;
+  top: 85%;
+  left: 20%;
+  width: 200vw;
+  height: 200vw;
+  margin-left: -100vw;
+  margin-top: -196vw;
+  border-radius: 40%;
+
+  animation: waveAnimation 25000ms infinite linear;
+  background: black;
+  clip-path: polygon(
+    25% 5%,
+    75% 5%,
+    100% 50%,
+    75% 95%,
+    25% 95%,
+    0% 50%
+  );
+}
+
+
+.octagon {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  width: 200vw;
+  height: 200vw;
+  margin-left: -100vw;
+  margin-top: -196vw;
+  border-radius: 40%;
+
+  animation: waveAnimation 30000ms infinite linear;
+  background: black;
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
 }

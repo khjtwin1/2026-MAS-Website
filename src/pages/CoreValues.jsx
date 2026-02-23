@@ -21,6 +21,8 @@ function CoreValues() {
       </div>
       <div className="wave-space"></div>
       <div className="wave"></div>
+      {/* <div className="hexagon"></div> */}
+      {/* <div className="octagon"></div>; */}
 
     </section>
   );
