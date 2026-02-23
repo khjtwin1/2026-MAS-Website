@@ -16,10 +16,12 @@
   padding-bottom: 100px;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 .core-header {
   align-self: flex-start;
   margin-left: 10.94%;
+  z-index: 2;
 }
 #coreValues .title {
   color: #cbcbcb;
@@ -42,31 +44,38 @@
   color: #fff;
   column-gap: 41px;
   row-gap: 43px;
-  z-index: 2;
+  z-index: 5;
 }
 
-.wave-container {
+.wave-space{
   position: absolute;
   bottom: 0;
-  left: 0;
   width: 100%;
-  overflow: hidden;
-  z-index: 0;
+  height: 530px;
+  background: linear-gradient(#000, #FF6E00);
+  opacity: 0.3;
 }
-.wave-track {
-  display: flex;
-  width: 200%;
-  animation: waveMove 30s linear infinite;
+
+.wave {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  width: 200vw;
+  height: 200vw;
+  margin-left: -100vw;
+  margin-top: -196vw;
+  border-radius: 40%;
+
+  animation: waveAnimation 20000ms infinite linear;
+  background: black;
+
 }
-.wave-track svg {
-  width: 50%;
-  height: 250px;
-}
-@keyframes waveMove {
+
+@keyframes waveAnimation {
   from {
-    transform: translateX(0);
+    transform: rotate(0deg);
   }
   to {
-    transform: translateX(-50%);
+    transform: rotate(360deg);
   }
 }

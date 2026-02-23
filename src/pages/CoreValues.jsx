@@ -19,50 +19,8 @@ function CoreValues() {
           />
         ))}
       </div>
-
-      <div className="wave-container">
-        <div className="wave-track">
-          <svg viewBox="0 0 1920 288" preserveAspectRatio="none">
-            <path
-              d="M0 0
-                L80 36
-                C160 72 320 144 480 186
-                C640 228 800 240 960 192
-                C1120 144 1280 36 1440 36
-                C1600 36 1760 144 1840 198
-
-                L1920 252
-                V288
-                H0
-                V0
-                Z
-                "
-              fill="#FF6E00"
-              fillOpacity="0.35"
-            />
-          </svg>
-
-          <svg viewBox="0 0 1920 288" preserveAspectRatio="none">
-            <path
-              d="M0 0
-                L80 36
-                C160 72 320 144 480 186
-                C640 228 800 240 960 192
-                C1120 144 1280 36 1440 36
-                C1600 36 1760 144 1840 198
-
-                L1920 252
-                V288
-                H0
-                V0
-                Z
-                "
-              fill="#FF6E00"
-              fillOpacity="0.35"
-            />
-          </svg>
-        </div>
-      </div>
+      <div className="wave-space"></div>
+      <div className="wave"></div>
 
     </section>
   );
