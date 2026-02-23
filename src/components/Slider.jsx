@@ -1,4 +1,5 @@
 import '../styles/Slider.css';
+
 function Slider({slideList,direction, name}) {
   return (
     <div className='slider'>
@@ -16,6 +17,5 @@ function Slider({slideList,direction, name}) {
         
   );
 }
-
 
 export default Slider;

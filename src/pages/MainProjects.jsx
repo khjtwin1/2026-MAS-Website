@@ -4,13 +4,12 @@ import { Link } from "react-router-dom";
 import projectsList from '../../data/projectsList';
 
 const half = Math.ceil(projectsList.length / 2);
-
 const slideProjectsUp = projectsList.slice(0, half);
 const slideProjectsDown = projectsList.slice(half);
 
 function MainProjects() {
   return (
-    <div className='mainProjects'>
+    <div id='projects'>
       <div className='projects-intro'>
         <div>
           <h1>PROJECTS</h1>
@@ -22,15 +21,11 @@ function MainProjects() {
         <path d="M1 8H17M17 8L9.8 1M17 8L9.8 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
         </svg></Link>
       </div>
-      
-      <div className='projects-slide1'>
+      <div className='sliders'>
         <Slider slideList={slideProjectsUp} direction="reverse" name='projects-slideUp'/>
+        <Slider slideList={slideProjectsDown} direction="normal" name='projects-slideDown'/>
       </div>
-      <Slider slideList={slideProjectsDown} direction="normal" name='projects-slideDown'/> 
-      
-      
-    </div>
-        
+    </div>  
   );
 }
 

@@ -11,16 +11,12 @@
     font-family: "Orbitron-ExtraBold";
     src: url("src/fonts/Orbitron/Orbitron-ExtraBold.ttf");
 }   
-
-body {
-    background-color: black;
-    color: #ffffff;
-}
 /* 마스 전체 css------------------ */
-.ourPrizeSection {
+#ourPrize {
+    padding-top: 30px;
+    padding-bottom: 115px;
     display: flex;
     position: relative;
-    padding-bottom: 223px;
 }
 /* 마스 배경 행성 사진 css------------------ */
 .ourprize_background {
@@ -32,7 +28,7 @@ body {
 }
 /* 마스 제목+설명+버튼 css------------------ */
 .ourPrize-left {
-    margin-top: 334px;
+    margin-top: 300px;
     margin-left: 168px;   
     background: rgba(55, 55, 55, 0);
     z-index: 2;
@@ -58,6 +54,7 @@ body {
     margin-top: 19px;
     background-color: transparent;
     width: 340px;
+    color: #fff;
 }
 /* 마스 상 더보기 버튼 css------------------ */
 .ourPrize-left .morePrize{
@@ -96,7 +93,7 @@ body {
 /* 마스 단체 사진 css------------------ */
 .ourpPicture {
     margin-left: 130px;
-    margin-top: 222px;
+    margin-top: 200px;
 }
 
 .ourprizePicture {
@@ -108,10 +105,9 @@ body {
     position: absolute;
     animation: spin 20s linear infinite;
     transform-origin: 0 300px;
-    
     width: 18px;
     height: auto;
-    
+    animation-delay: -16s;
     z-index: 3;
 }
 .miniTitan2 {

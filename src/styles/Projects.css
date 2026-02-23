@@ -7,7 +7,9 @@
     font-family: "Orbitron-SemiBold";
     src: url("../fonts/Orbitron/Orbitron-SemiBold.ttf");
 }
-
+.project{
+    padding-top: 115px;
+}
 .list {
     margin-left: 20px;
     display: flex;
@@ -44,7 +46,6 @@
     padding: 16px 27px;
     color: #9D9D9D;
 }
-
 
 /* 프로젝트 박스 컴포넌트 */
 .allProjects {

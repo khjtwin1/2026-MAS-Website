@@ -4,7 +4,7 @@ import coreValuesList from "../../data/coreValuesList";
 
 function CoreValues() {
   return (
-    <section id="coreValues">
+    <section id="vision">
       <div className="core-header">
         <h1 className="title">CORE VALUES</h1>
         <p className="orange">MAS가 추구하는 핵심 가치</p>
@@ -20,7 +20,7 @@ function CoreValues() {
         ))}
       </div>
       <div className="wave-space"></div>
-      <div className="wave"></div>
+      {/* <div className="wave"></div> */}
       {/* <div className="hexagon"></div> */}
       {/* <div className="octagon"></div>; */}
 

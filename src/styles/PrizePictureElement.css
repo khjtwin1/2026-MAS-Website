@@ -13,12 +13,16 @@
 
 .picture {
   /* 형태 잡기 */
-  width: 304px;
-  height: 195px;
+  width: 20vw;
+  height: 13vw;
+  min-width: 200px;
+  min-height: 130px;
+  max-width: 400px;
+  max-height: 280px;  
   /* 강제 초기화 */
   margin: 0px;
   margin-top: 43px;
-  border-radius: 15px;
+  border-radius: 1vw;
   /* 사진 꽉 차게하는 코드 */
   object-fit: cover;
 }

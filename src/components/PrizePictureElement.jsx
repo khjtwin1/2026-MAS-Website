@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "../styles/PrizePictureElement.css"
 
 function PrizePictureElement({ PictureElement, explanationElement }) {

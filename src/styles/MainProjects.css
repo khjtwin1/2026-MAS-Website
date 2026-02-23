@@ -1,25 +1,26 @@
 @font-face {
-    font-family: "Orbitron-Bold";
-    src: url("../fonts/Orbitron/Orbitron-Bold.ttf");
+  font-family: "Orbitron-Bold";
+  src: url("../fonts/Orbitron/Orbitron-Bold.ttf");
 }
 @font-face {
-    font-family: "Pretendard-Medium";
-    src: url("../fonts/Pretendard/Pretendard-Medium.otf");
+  font-family: "Pretendard-Medium";
+  src: url("../fonts/Pretendard/Pretendard-Medium.otf");
 }
 
-.mainProjects {
-  margin-bottom: 200px;
+#projects {
+  padding-top: 115px;
+  padding-bottom: 115px;
 }
 /* projects-intro */
 .projects-intro {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 170px 160px 117px 176px;
+  padding: 0 200px 108px;
 }
 /* 제목 */
 .projects-intro h1 {
-  color: #FF6723;
+  color: #ff6723;
   font-family: "Orbitron-Bold", sans-serif;
   font-size: 64px;
   /* 제목과 문구 사이 간격 */
@@ -27,7 +28,7 @@
 }
 /* 문구 */
 .projects-intro p {
-  color: #FFF;
+  color: #fff;
   font-family: "Pretendard-Medium", sans-serif;
   font-size: 19px;
 }
@@ -63,22 +64,16 @@
   stroke: black;
   transition: 0.2s ease;
 }
-
 /* hover */
 .projects-btn:hover {
-  color: #FF6723;
-  border: 2px solid #FF6723;
+  color: #ff6723;
+  border: 2px solid #ff6723;
 }
 /* 화살표 배경(원) */
 .projects-btn:hover svg {
-  background-color: #FF6723;
+  background-color: #ff6723;
 }
 /* 화살표 선 */
 .projects-btn:hover path {
   stroke: white;
-}
-
-/* 이미지 슬라이드 */
-.projects-slide1 {
-  margin-bottom: 27px;
 }

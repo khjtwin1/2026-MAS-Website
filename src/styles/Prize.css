@@ -33,9 +33,9 @@ body {
 }
 
 .prize_grid {
+    justify-content: center;
     display: grid;
-    padding: 0 17.5%;
     grid-template-columns: repeat(3, auto);
     row-gap: 10px;
-    column-gap: 2px;
+    column-gap: 20px;
 }
