@@ -1,90 +1,94 @@
-@font-face {
-    font-family: "Pretendard-Medium";
-    src: url("../../fonts/Pretendard/Pretendard-Medium.otf");
-}  
-@font-face {
-    font-family: "Pretendard-SemiBold";
-    src: url("../../fonts/Pretendard/Pretendard-SemiBold.otf");
-}
+    @font-face {
+        font-family: "Pretendard-Medium";
+        src: url("../../fonts/Pretendard/Pretendard-Medium.otf");
+    }  
+    @font-face {
+        font-family: "Pretendard-SemiBold";
+        src: url("../../fonts/Pretendard/Pretendard-SemiBold.otf");
+    }
 
-.card{
-    position: relative;
-    overflow: hidden;
-    transition: all 1s ease;
-}
+    .card{
+        position: relative;
+        overflow: hidden;
+        transition: all 1s ease;
+        width: 100%;
+        max-width: auto;
+    }
 
-.card:hover .memberFea1,
-.card:hover .memberFea2 {
-    transition: all 0.3s ease;
-    background-color: rgba(255, 157, 0, 0.3);
-    border-color: rgba(255,255,255,0.25);
-}
+    .card:hover .memberFea1,
+    .card:hover .memberFea2 {
+        transition: all 0.3s ease;
+        background-color: rgba(255, 157, 0, 0.3);
+        border-color: rgba(255,255,255,0.25);
+    }
 
-.card:hover .memberOverlay {
-    transition: all 1s ease;
-    background: rgba(0,0,0,0.0);
-}
+    .card:hover .memberOverlay {
+        transition: all 1s ease;
+        background: rgba(0,0,0,0.0);
+    }
 
-.memberOverlay {
-    position: absolute;
-    inset: 0;
+    .memberOverlay {
+        position: absolute;
+        inset: 0;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
-    padding: 257px 14px 0px 14px;
-    background: rgba(0,0,0,0.50); /* 이미지 살짝 어둡게 */
-    color: white;
-}
+        justify-content: flex-end;
+        padding: 257px 14px 0px 14px;
+        background: rgba(0,0,0,0.50); /* 이미지 살짝 어둡게 */
+        color: white;
+    }
 
-.memberPicture {
-    width: 304px;
-    height: auto;
-    border-radius: 12px;
-    display: block;
-}
+    .memberPicture {
+        width: 304px;
+        height: auto;
+        border-radius: 12px;
+        display: block;
+    }
 
-.memberClass {
-    font-size: 12px;
-    font-family: "Pretendard-Medium", sans-serif;
-}
+    .memberClass {
+        font-size: 12px;
+        font-family: "Pretendard-Medium", sans-serif;
+    }
 
-.memberName {
-    font-size: 19px;
-    font-family: "Pretendard-SemiBold", sans-serif;
-    margin-top: 6px;
-    margin-bottom: 6px;
-}
+    .memberName {
+        font-size: 19px;
+        font-family: "Pretendard-SemiBold", sans-serif;
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
 
-.memberYear {
-    font-size: 14px;
-    font-family: "Pretendard-Medium", sans-serif;
-    margin-bottom: 11px;
-}
+    .memberYear {
+        font-size: 14px;
+        font-family: "Pretendard-Medium", sans-serif;
+        margin-bottom: 11px;
+    }
 
-.memberFea {
-    display: flex;
-    gap: 11px;
-    margin-bottom: 11px;
-}
+    .memberFea {
+        display: flex;
+        gap: 11px;
+        margin-bottom: 11px;
+        flex-wrap: wrap;
+    }
 
-.memberFea1 {
-    transition: all 0.3s ease;
-    font-size: 11px;
-    font-family: "Pretendard-Medium", sans-serif;
-    padding: 10px;
-    border-radius: 1px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    background-color: rgba(255,255,255,0.15)
-}
+    .memberFea1 {
+        transition: all 0.3s ease;
+        font-size: 11px;
+        font-family: "Pretendard-Medium", sans-serif;
+        padding: 10px;
+        border-radius: 1px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        background-color: rgba(255,255,255,0.15);
+    }
 
-.memberFea2 {
-    transition: all 0.3s ease;
-    font-size: 11px;
-    font-family: "Pretendard-Medium", sans-serif;
-    padding: 10px;
-    border-radius: 1px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    background-color: rgba(255,255,255,0.15)
-}
+    .memberFea2 {
+        transition: all 0.3s ease;
+        font-size: 11px;
+        font-family: "Pretendard-Medium", sans-serif;
+        padding: 10px;
+        border-radius: 1px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        background-color: rgba(255,255,255,0.15);
+    }

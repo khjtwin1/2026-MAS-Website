@@ -1,7 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer.jsx";
 import prizeList from "../../data/prizeList.js";
-import PrizeYearElement from "../components/PrizeYearElement";
 import PrizePictureElement from "../components/PrizePictureElement";
 import Banner from "../components/Banner";
 import "../styles/Prize.css"
