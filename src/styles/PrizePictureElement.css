@@ -9,11 +9,15 @@
   padding: 0px;
   position: relative;
   overflow: hidden;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .picture {
   /* 형태 잡기 */
-  width: 20vw;
+  width: 100%;
+  aspect-ratio: 20 / 13;
   height: 13vw;
   min-width: 200px;
   min-height: 130px;
@@ -22,9 +26,11 @@
   /* 강제 초기화 */
   margin: 0px;
   margin-top: 43px;
-  border-radius: 1vw;
+  border-radius: 15px;
   /* 사진 꽉 차게하는 코드 */
   object-fit: cover;
+  object-position: top;
+  flex-wrap: wrap;
 }
 
 .overlayText {
@@ -50,3 +56,4 @@
 .PrizePictureElement:hover .picture {
   filter: brightness(56%);
 }
+

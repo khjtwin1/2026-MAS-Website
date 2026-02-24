@@ -1,32 +1,52 @@
+@media (max-width: 768px) {
+  .bannerTitle {
+    font-size: 32px;
+  }
+
+  .bannerExplanation {
+    font-size: 14px;
+  }
+}
+/* 필수 전역 설정 */
+* {
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
+/* 배너 영역 */
 .bannerAll {
-    height: 320px;
+  width: 100%;
+    min-height: 40vh;
+  padding: 60px 20px;
 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; 
-    
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
 }
 
+/* 제목 */
 .bannerTitle {
-    font-size: 64px;
-    font-family: "Orbitron-ExtraBold", sans-serif;
+  font-size: clamp(28px, 6vw, 64px);
+  font-family: "Orbitron-ExtraBold", sans-serif;
+  margin: 0;
 }
 
+/* 설명 */
 .bannerExplanation {
-    margin-top: 19px;
-
-    font-size: 17px;
-    font-family: "Pretendard-Medium", sans-serif;
-
-    color: #C3C3C3;
+  margin-top: 20px;
+  font-size: clamp(14px, 2.5vw, 17px);
+  font-family: "Pretendard-Medium", sans-serif;
+  color: #C3C3C3;
+  max-width: 800px;
 }

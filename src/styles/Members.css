@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: "Pretendard-Medium";
-    src: url("../../fonts/Pretendard/Pretendard-Medium.otf") format("opentype");
+    src: url("../../fonts/Pretendard/Pretendard-Medium.otf") format("truetype");
 }
 
 @font-face {
@@ -16,6 +16,7 @@
 .members{
     background-color: #000;
     padding-top: 115px;
+    width: 100%;
     color: #fff;
     position: relative;
 }
@@ -51,13 +52,16 @@
     margin-top: 75px;
     margin-bottom: 100px;
     background-color: rgba(0, 0, 0, 0.5);
+    flex-wrap: wrap;
 }
 
 .members_grid{
     display: grid;
+    max-width: auto;
+    margin: 0 auto; 
     padding: 0 17.5%;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     row-gap: 54px;
 }    
 
@@ -122,4 +126,85 @@
 
 .member_sixYear_title {
     margin-bottom: 72px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .members_grid {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
+        padding: 0 10%;
+    }
+
+    .generation_buttons {
+        gap: 24px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .member_title {
+        font-size: 48px;
+    }
+
+    .member_explanation {
+        font-size: 18px;
+    }
+
+    .member_join {
+        width: 350px;
+        height: 70px;
+        font-size: 24px;
+    }
+
+    .member_button {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .generation_buttons {
+        gap: 16px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 0 10px;
+    }
+
+    .yearBtn {
+        padding: 12px 20px;
+        font-size: 12px;
+    }
+
+    .members_grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        width: 100%;
+        row-gap: 30px;
+    }
+
+    .memberOveray {
+        padding:0px;
+    }
+
+    .member_sixYear {
+        padding-top: 150px;
+        background-size: 70%;
+    }
+
+    .member_title {
+        font-size: 36px;
+    }
+
+    .member_explanation {
+        font-size: 16px;
+    }
+
+    .member_join {
+        width: 280px;
+        height: 60px;
+        font-size: 20px;
+    }
+
+    .member_button {
+        flex-direction: column;
+        gap: 16px;
+    }
 }

@@ -142,3 +142,69 @@
     left: 201.5px;
     z-index: 3;
 }
+
+/* ============================= */
+/* 📱 태블릿 이하 */
+@media (max-width: 1024px) {
+
+    #ourPrize {
+        flex-direction: column;   /* 🔥 수정 */
+        align-items: center;      /* 🔥 수정 */
+    }
+
+    .ourPrize-left {
+        margin-left: 0;           /* 🔥 수정 */
+        text-align: center;       /* 🔥 수정 */
+        margin-top: 150px;        /* 🔥 추가 */
+    }
+
+    .ourPrize-left .explanation {
+        width: 100%;              /* 🔥 수정 */
+    }
+
+    .ourpPicture {
+        margin-left: 0;           /* 🔥 수정 */
+        margin-top: 80px;         /* 🔥 추가 */
+    }
+
+    .ourprizePicture {
+        width: 90%;               /* 🔥 추가 */
+    }
+
+    .ourprize_background {
+        height: 450px;            /* 🔥 수정 */
+        top: 50px;                /* 🔥 수정 */
+    }
+}
+
+
+/* ============================= */
+/* 📱 모바일 */
+@media (max-width: 768px) {
+
+    .ourPrize-left .our,
+    .ourPrize-left .prize {
+        font-size: 42px;          /* 🔥 수정 */
+    }
+
+    .ourPrize-left .morePrize {
+        margin-top: 60px;         /* 🔥 수정 */
+        width: auto;              /* 🔥 수정 */
+        padding: 10px 15px;       /* 🔥 수정 */
+    }
+
+    .ourprize_background {
+        height: 350px;            /* 🔥 수정 */
+    }
+
+    /* 🔥 행성 중심 위치 조정 */
+    .planet_center1 {
+        left: 50%;                /* 🔥 수정 */
+        transform: translateX(-50%); /* 🔥 추가 */
+    }
+
+    .planet_center2 {
+        left: 50%;                /* 🔥 수정 */
+        transform: translateX(-50%); /* 🔥 추가 */
+    }
+}
