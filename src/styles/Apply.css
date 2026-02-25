@@ -8,17 +8,31 @@
   align-items: center;
   justify-content: center;
   font-family: "Pretendard-Medium", sans-serif;
-  font-size: 19px;
+  font-size: 1.15rem;
   color: #fff;
   text-decoration: none;
-  width: 125px;
-  height: 52px;
+  white-space: nowrap;
+  padding: 0.75rem 1.5rem;
   border-radius: 1000px;
   border: 2px solid #fff;
   cursor: pointer;
   background-color: #000;
   transition: 0.2s ease;
+  flex-shrink: 0;
 }
 .apply:hover {
   background-color: #ff6723;
+}
+/* 반응형 */
+@media (max-width: 1024px) {
+  .apply {
+    font-size: 0.85rem;
+    padding: 0.6rem 1.1rem;
+  }
+}
+@media (max-width: 768px) {
+  .apply {
+    font-size: 0.75rem;
+    padding: 0.5rem 0.9rem;
+  }
 }

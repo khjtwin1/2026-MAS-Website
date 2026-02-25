@@ -2,22 +2,23 @@
   font-family: "Orbitron-Black";
   src: url("/fonts/Orbitron/Orbitron-Black.ttf");
 }
+
 #hero {
   background-color: #000;
   min-height: 100vh;
-  padding: 250px 0 100px;
+  padding: 100px 0;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 35px;
+  justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
+
 .heroRow {
   display: flex;
   align-items: center;
-  gap: 220px;
-  padding-left: 10%;
+  gap: 100px;
 }
+
 .texts {
   font-family: "Orbitron-Black", sans-serif;
   font-size: 80px;
@@ -25,29 +26,94 @@
   width: 390px;
   height: 300px;
 }
+
 .texts .orange {
   color: #ff6723;
 }
-#hero .apply {
-  margin-top: 30px;
-}
-.planet {
+
+.planet-container {
   position: relative;
-  width: 660px;
-  height: 323px;
+  width: 800px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.planet img {
+
+.main-planet {
+  width: 404.459px;
+  height: 404.459px;
+  border-radius: 50%;
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%),
+    linear-gradient(295deg, rgba(130, 82, 82, 0.00) 9.45%, rgba(255, 21, 0, 0.34) 102.74%),
+    radial-gradient(66.75% 66.75% at 47.49% 31.8%, #FF5900 0%, #90390A 57.77%, #1A0A00 100%);
+  position: absolute;
+  z-index: 100;
+}
+
+.orbit-1-size {
+  width: 798.324px;
+  height: 212.612px;
+  transform: rotate(13.732deg);
+  position: absolute;
+  pointer-events: none;
+}
+
+.orbit-2-size {
+  width: 626.862px;
+  height: 201.638px;
+  transform: rotate(-38.027deg);
+  position: absolute;
+  pointer-events: none;
+}
+
+.orbit-1-border {
+  border: 1px solid rgba(203, 203, 203, 0.2);
+  border-radius: 50%;
+}
+
+.orbit-2-border {
+  border: 2px solid rgba(159, 52, 9, 0.8);
+  border-radius: 50%;
+}
+
+.orbit-line-container.layer-back {
+  clip-path: inset(0 0 50% 0);
+}
+
+.orbit-line-container.layer-front {
+  clip-path: inset(50% 0 0 0);
+}
+
+.orbit-sat-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+
+.layer-back {
+  z-index: 50;
+}
+
+.layer-front {
+  z-index: 150;
+}
+
+
+.satellite-js {
   position: absolute;
   top: 50%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-}
-.mars {
-  width: 290px;
-}
-.wR {
-  width: 600px;
-}
-.oR {
-  width: 380px;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+  filter: blur(1px);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+  will-change: transform, opacity;
 }

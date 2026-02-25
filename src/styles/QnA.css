@@ -8,25 +8,60 @@
 }
 
 #qna {
-  background-color: #000;
-  padding: 153px 168px 130px;
   display: flex;
+  background-color: #000;
   flex-direction: column;
   color: #fff;
   align-items: center;
+  padding: 153px 10% 130px;
 }
-.qa_intro{
+.qa_intro {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-.qa_intro h1{
+.qa_intro h1 {
   font-family: "Orbitron-Bold", sans-serif;
-  font-size: 64px;
-  color: #FF6723;
+  font-size: 4rem;
+  color: #ff6723;
 }
-.qa_intro p{
+.qa_intro p {
   font-family: "Pretendard-Medium", sans-serif;
-  font-size: 19px;
+  font-size: 1.2rem;
   margin-bottom: 90px;
+}
+/* 반응형 */
+@media (max-width: 1500px) {
+  #qna {
+    padding: 130px 8% 110px;
+  }
+  .qa_intro h1 {
+    font-size: 3.5rem;
+  }
+  .qa_intro p {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 1024px) {
+  #qna {
+    padding: 100px 7% 80px;
+  }
+  .qa_intro h1 {
+    font-size: 3rem;
+  }
+  .qa_intro p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  #qna {
+    padding: 80px 5% 60px;
+  }
+  .qa_intro h1 {
+    font-size: 2.2rem;
+  }
+  .qa_intro p {
+    font-size: 0.9rem;
+    margin-bottom: 60px;
+  }
 }

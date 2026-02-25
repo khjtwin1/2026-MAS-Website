@@ -7,44 +7,62 @@
     src: url("/fonts/Pretendard/Pretendard-Medium.otf");
 }
 
-.qa_box{
-    width: 812px;
-    border: 1px solid #6A6A6A;
-    border-radius: 15px;
-    margin-top: 22px;
-    cursor: pointer;
+.qa_box {
+  width: 812px;
+  max-width: 100%;
+  border: 1px solid #6a6a6a;
+  border-radius: 15px;
+  margin-top: 22px;
+  cursor: pointer;
 }
-.qa_title{
-    font-family: "Pretendard-Semibold", sans-serif;
-    font-size: 18px;
-    padding: 20px 32px;
-    border-radius: 15px 15px 0 0;
+.qa_title {
+  font-family: "Pretendard-Semibold", sans-serif;
+  font-size: 18px;
+  padding: 20px 32px;
+  border-radius: 15px 15px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.qa_title.open{
-    /* 1 */
-    background: rgba(255, 110, 0, 0.35);
-    border-bottom: 1px solid #6A6A6A;
-
-    /* 2 */
-    /* border-bottom: 1px solid #FF6723; */
+.arrow {
+  transition: transform 0.3s ease;
+  font-size: 20px;
+  flex-shrink: 0;
+  margin-left: 16px;
 }
-.qa_content{
-    white-space: pre-line;
-    font-family: "Pretendard";
-    font-size: 16px;
-    padding: 20px 32px;
-    color: #BFBFBF;
-    line-height: 26px;
+.arrow.open {
+  transform: rotate(180deg);
 }
-
+.qa_title.open {
+  background: rgba(255, 110, 0, 0.35);
+  border-bottom: 1px solid #6a6a6a;
+}
+.qa_content {
+  white-space: pre-line;
+  font-family: "Pretendard";
+  font-size: 16px;
+  padding: 20px 32px;
+  color: #bfbfbf;
+  line-height: 26px;
+}
 .qa_content_wrapper {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease, opacity 0.3s ease;
-    opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+  opacity: 0;
 }
-
 .qa_content_wrapper.open {
-    max-height: 500px;
-    opacity: 1;
+  max-height: 500px;
+  opacity: 1;
+}
+/* 반응형 */
+@media (max-width: 768px) {
+  .qa_title {
+    font-size: 15px;
+    padding: 16px 20px;
+  }
+  .qa_content {
+    font-size: 14px;
+    padding: 16px 20px;
+  }
 }

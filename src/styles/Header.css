@@ -17,8 +17,8 @@
   position: fixed;
   z-index: 1000;
   display: flex;
-  padding: 20px 8.5%;
-  height: 115px;
+  padding: 1rem 8.5%;
+  height: 5.5rem;
   width: 100%;
   left: 0;
   right: 0;
@@ -26,7 +26,6 @@
   box-shadow: 0 2px 11.9px 0 rgba(90, 90, 90, 0.25);
   backdrop-filter: blur(12.149999618530273px);
 }
-
 /* 로고 부분 */
 .header_logo {
   display: flex;
@@ -36,8 +35,8 @@
   cursor: pointer;
 }
 .header_logo > img {
-  width: 46px;
-  height: 46px;
+  width: 3rem;
+  height: 3rem;
 }
 .logoText {
   display: block;
@@ -45,29 +44,72 @@
 }
 .logo {
   font-family: "Orbitron-Black", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   color: #ff6723;
 }
 .logoMeaning {
   font-family: "Orbitron-Bold", sans-serif;
-  font-size: 8px;
+  font-size: 0.5rem;
   color: #949494;
-  width: 75px;
+  white-space: nowrap;
 }
-
 /* nav 부분 */
 .header > .nav_list {
   align-items: center;
-  margin-left: 13%;
-  font-size: 16px;
+  flex: 1;
+  justify-content: center;
+  font-size: 1rem;
   display: flex;
   list-style: none;
-  gap: 35px;
+  gap: 3rem;
   color: #cbcbcb;
 }
 .header_socialLinks {
-  margin-left: 8%;
+  margin-left: auto;
+  flex-shrink: 0;
 }
 .header .apply {
-  margin-left: 60px;
+  margin-left: 1.5rem;
+  flex-shrink: 0;
+}
+/* 반응형 */
+@media (max-width: 1500px) {
+  .header > .nav_list {
+    gap: 2rem;
+    font-size: 0.9rem;
+  }
+  .header_socialLinks {
+    margin-left: 1.5rem;
+  }
+  .header .apply {
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 1024px) {
+  .header > .nav_list {
+    gap: 1.2rem;
+    font-size: 0.85rem;
+  }
+  .header_socialLinks {
+    margin-left: 1rem;
+  }
+  .header .apply {
+    margin-left: 0.75rem;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    padding: 20px 3%;
+    height: 90px;
+  }
+  .header > .nav_list {
+    gap: 0.6rem;
+    font-size: 0.75rem;
+  }
+  .header_socialLinks {
+    margin-left: 0.5rem;
+  }
+  .header .apply {
+    margin-left: 0.5rem;
+  }
 }

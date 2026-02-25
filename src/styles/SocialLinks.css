@@ -4,7 +4,25 @@
   display: flex;
   gap: 26px;
 }
-.nav_links > li > img {
+.nav_links > li > a > img {
   height: 24px;
   cursor: pointer;
+  display: block;
+}
+/* 반응형 */
+@media (max-width: 1024px) {
+  .nav_links {
+    gap: 16px;
+  }
+  .nav_links > li > a > img {
+    height: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .nav_links {
+    gap: 12px;
+  }
+  .nav_links > li > a > img {
+    height: 18px;
+  }
 }
