@@ -61,10 +61,10 @@
     display: grid;
     max-width: auto;
     margin: 0 auto; 
-    padding: 0 17.5%;
+    padding: 0px 33px;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 54px;
+    row-gap: 25px;
 }    
 
 .member_sixYear {
@@ -132,84 +132,117 @@
 .member_sixYear_title {
     margin-bottom: 72px;
 }
-
-@media (min-width: 769px) and (max-width: 1024px) {
-    .members_grid {
-        grid-template-columns: repeat(2, 1fr);
-        row-gap: 40px;
-        padding: 0 10%;
-    }
-
-    .generation_buttons {
-        gap: 24px;
-        margin-top: 60px;
-        margin-bottom: 60px;
-    }
-
-    .member_title {
-        font-size: 48px;
-    }
-
-    .member_explanation {
-        font-size: 18px;
-    }
-
-    .member_join {
-        width: 350px;
-        height: 70px;
-        font-size: 24px;
-    }
-
-    .member_button {
-        gap: 16px;
-    }
-}
-
 @media (max-width: 768px) {
-    .generation_buttons {
-        gap: 16px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        padding: 0 10px;
-    }
-
-    .yearBtn {
-        padding: 12px 20px;
-        font-size: 12px;
-    }
-
-    .members_grid {
-        grid-template-columns: 1fr;
-        justify-items: center;
+    .members{
+        background-color: #000;
+        padding-top: 60px;
         width: 100%;
-        row-gap: 30px;
+        color: #fff;
+        position: relative;
+    }
+    .yearBtn {
+        padding: 8px 13px;
+        color: #9D9D9D;
+        background-color: #0D0D0D;
+        border-radius: 11px;
+        border: 2px solid #9D9D9D;
+        font-size: 10px;
+        font-family: "Orbitron-ExtraBold";
+        cursor: pointer;
     }
 
-    .memberOveray {
-        padding:0px;
+    /* 선택된 버튼 스타일 */
+    .yearBtn.selected {
+        padding: 8px 13px;
+        font-size: 10px;
+        color: #ffffff;
+        border-color: #ffffff;
+        background-color: rgba(255,157,0,0.3);
     }
+    .generation_buttons {
+        display: flex;
+        justify-content: center;
+        gap: 17px;
+        margin-top: 37px;
+        margin-bottom: 50px;
+        background-color: rgba(0, 0, 0, 0.5);
+        flex-wrap: wrap;
+        cursor: pointer;
+    }
+
+    .members_grid{
+        display: grid;
+        max-width: auto;
+        margin: 0 auto; 
+        padding: 0 33px;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 13px;
+    }    
 
     .member_sixYear {
-        padding-top: 150px;
-        background-size: 70%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding:0px;
+        padding-top: 100px;
+        background-image: url("/MemberPlanet.svg");
+        background-repeat: no-repeat;
+        background-position: center 20px;
+    
+        background-size: 50%;
+
     }
 
     .member_title {
-        font-size: 36px;
-    }
+        font-family: "Orbitron-ExtraBold", sans-serif;
+        font-size: 27px;
+        color: #000000;
+        text-shadow: 1px 1px 4px rgba(225,225, 225, 0.3),
+        4px 4px 8px rgba(0, 0, 0, 0.4),
+        -2px -2px 4px rgba(192, 192, 192, 0.5);
 
-    .member_explanation {
-        font-size: 16px;
     }
 
     .member_join {
-        width: 280px;
-        height: 60px;
-        font-size: 20px;
+        width: 215px;
+        height: 38px;
+        color: #ffffff;
+        font-size: 13px;
+        font-family: "Pretendard-Medium", sans-serif;
+        border: rgb(211, 211, 211, 0.5) 2px solid;
+        border-radius: 12px;
+        background-image: linear-gradient(to right, #FF6200, #FF8D23);
+
     }
 
+    .member_join:hover {
+        background-image: linear-gradient(to right, rgba(160, 70, 0, 1), rgba(160, 70, 0, 1));
+        cursor: pointer;
+    }   
+
+    .member_joinButton {
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        }
+
     .member_button {
-        flex-direction: column;
-        gap: 16px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 42px;
+    
+    }
+
+    .member_explanation {
+        font-size: 10px;
+        font-family: "Orbitron-Medium", sans-serif;
+        margin-top: 13px;
+    }
+
+    .member_sixYear_title {
+        margin-bottom: 36px;
     }
 }

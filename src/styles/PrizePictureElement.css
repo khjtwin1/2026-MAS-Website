@@ -17,12 +17,10 @@
 .picture {
   /* 형태 잡기 */
   width: 100%;
-  aspect-ratio: 20 / 13;
-  height: 13vw;
-  min-width: 200px;
-  min-height: 130px;
   max-width: 400px;
-  max-height: 280px;  
+  aspect-ratio: 20 / 13;
+  border-radius: 15px;
+  object-fit: cover;
   /* 강제 초기화 */
   margin: 0px;
   margin-top: 43px;
@@ -57,3 +55,83 @@
   filter: brightness(56%);
 }
 
+/* 태블릿 */
+@media (max-width: 768px) {
+  .picture {
+    /* 형태 잡기 */
+    height: 97px;
+    width: 150px;
+    /* 강제 초기화 */
+    margin: 0px;
+    margin-top: 21px;
+    border-radius: 7px;
+    /* 사진 꽉 차게하는 코드 */
+    object-fit: cover;
+    object-position: top;
+    flex-wrap: wrap;
+  }
+
+  .overlayText {
+    position: absolute;
+    /* 아래에 고정 */
+    bottom: 7px;
+    left:11px;
+    width: auto;
+    /* 폰트 설정 등등 */
+    color: white;
+    font-family: "Pretendard-Medium", sans-serif;
+    font-size: 10px;
+    /* 대충 안보이게 하는 코드 */
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 15px;
+  }
+  /* 호버됬을때 변하는 코드 */
+  .PrizePictureElement:hover .overlayText {
+    opacity: 1;
+  }
+
+  .PrizePictureElement:hover .picture {
+    filter: brightness(56%);
+  }
+}
+
+@media (max-width: 376px) {
+  .PrizePictureElement > .picture {
+    /* 형태 잡기 */
+    height: 48px;
+    width: 75px;
+    /* 강제 초기화 */
+    margin: 0px;
+    margin-top: 10px;
+    border-radius: 3px;
+    /* 사진 꽉 차게하는 코드 */
+    object-fit: cover;
+    object-position: top;
+    flex-wrap: wrap;
+  }
+
+  .overlayText {
+    position: absolute;
+    /* 아래에 고정 */
+    bottom: 3px;
+    left:5px;
+    width: auto;
+    /* 폰트 설정 등등 */
+    color: white;
+    font-family: "Pretendard-Medium", sans-serif;
+    font-size: 5px;
+    /* 대충 안보이게 하는 코드 */
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 15px;
+  }
+  /* 호버됬을때 변하는 코드 */
+  .PrizePictureElement:hover .overlayText {
+    opacity: 1;
+  }
+
+  .PrizePictureElement:hover .picture {
+    filter: brightness(56%);
+  }
+}
