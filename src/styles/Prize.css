@@ -25,6 +25,11 @@ body {
     margin-top: 75px;
     margin-bottom: 40px;
     flex-wrap: wrap;
+    
+}
+
+.yeaerbtn {
+    cursor: pointer;
 }
 
 .yearbtn.selected {
