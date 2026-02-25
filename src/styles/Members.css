@@ -23,7 +23,7 @@
 .banner{
     height: 400px;
     width: 100%;
-    background-color: #FF8137;
+    /* background-color: #FF8137; */
 }
 .banner_title{
     font-family: "Orbitron-ExtraBold", sans-serif;
