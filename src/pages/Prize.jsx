@@ -22,7 +22,7 @@ function Prize() {
 
             <div className="Year">
                 {[2024,2025,2026].map((g) => (
-                    <button key={g} className={`yearBtn ${gen === g ? "selected" : ""}`} onClick={() => setGen(g)}>
+                    <button key={g} className={`Year_yearBtn ${gen === g ? "selected" : ""}`} onClick={() => setGen(g)}>
                         {g}
                     </button>
                 ))}
