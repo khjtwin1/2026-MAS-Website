@@ -1,17 +1,14 @@
 @font-face {
     font-family: "Orbitron-ExtraBold";
-    src: url("../../fonts/Orbitron/Orbitron-ExtraBold.ttf");
-}
+    src: url("../../fonts/Orbitron/Orbitron-ExtraBold.ttf") format("truetype");
 
-@font-face {
     font-family: "Pretendard-Medium";
-    src: url("../../fonts/Pretendard/Pretendard-Medium.otf");
+    src: url("../../fonts/Pretendard/Pretendard-Medium.otf") format("truetype");
+
+    font-family: "Orbitron-Medium";
+    src: url("../../fonts/Orbitron/Orbitron-Medium.ttf") format("truetype");
 }
 
-@font-face {
-    font-family: "Orbitron-Medium";
-    src: url("../../fonts/Orbitron/Orbitron-Medium.ttf");
-}
 body {
     box-sizing: border-box;
     margin: 0px;
