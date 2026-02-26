@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import "../styles/Hero.css";
 import Apply from "../components/Apply";
-import Typewriter from 'typewriter-effect';
+import Typewriter from "typewriter-effect";
 
 function Hero() {
-  const orbit1Count = 4; 
+  const orbit1Count = 4;
   const orbit2Count = 3;
 
   const sat1BackRefs = useRef([]);
@@ -19,7 +19,7 @@ function Hero() {
 
       for (let i = 0; i < orbit1Count; i++) {
         const spacing = (Math.PI * 2) / orbit1Count;
-        const currentAngle = angle + (i * spacing);
+        const currentAngle = angle + i * spacing;
         const x = 399 * Math.cos(currentAngle);
         const y = 106 * Math.sin(currentAngle);
         const transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`;
@@ -41,7 +41,7 @@ function Hero() {
 
       for (let i = 0; i < orbit2Count; i++) {
         const spacing = (Math.PI * 2) / orbit2Count;
-        const currentAngle = (-angle * 1.2) + (i * spacing);
+        const currentAngle = -angle * 1.2 + i * spacing;
         const x = 313 * Math.cos(currentAngle);
         const y = 100 * Math.sin(currentAngle);
         const transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`;
@@ -68,9 +68,13 @@ function Hero() {
     return () => cancelAnimationFrame(animationId);
   }, [orbit1Count, orbit2Count]);
 
-  const createSats = (count, refs) => 
+  const createSats = (count, refs) =>
     Array.from({ length: count }).map((_, i) => (
-      <div key={i} className="satellite-js" ref={el => refs.current[i] = el} />
+      <div
+        key={i}
+        className="satellite-js"
+        ref={(el) => (refs.current[i] = el)}
+      />
     ));
 
   return (
@@ -82,20 +86,21 @@ function Hero() {
               options={{
                 strings: [
                   'SHARE<br/>YOUR<br/><span class="orange">ABILITY</span>',
-                  'MY<br/><span class="orange">ABILITY</span><br/>SHARE'
+                  'MY<br/><span class="orange">ABILITY</span><br/>SHARE',
                 ],
-                autoStart: true, loop: true, pauseFor: 2000,
+                autoStart: true,
+                loop: true,
+                pauseFor: 2000,
               }}
             />
           </div>
-          <Apply/>
+          <Apply />
         </div>
 
         <div className="planet-container">
-
           <div className="orbit-1-size orbit-1-border orbit-line-container layer-back" />
           <div className="orbit-2-size orbit-2-border orbit-line-container layer-back" />
-          
+
           <div className="orbit-1-size orbit-sat-container layer-back">
             {createSats(orbit1Count, sat1BackRefs)}
           </div>
@@ -107,7 +112,7 @@ function Hero() {
 
           <div className="orbit-1-size orbit-1-border orbit-line-container layer-front" />
           <div className="orbit-2-size orbit-2-border orbit-line-container layer-front" />
-          
+
           <div className="orbit-1-size orbit-sat-container layer-front">
             {createSats(orbit1Count, sat1FrontRefs)}
           </div>

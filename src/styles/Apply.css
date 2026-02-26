@@ -20,16 +20,18 @@
   transition: 0.2s ease;
   flex-shrink: 0;
 }
+
 .apply:hover {
   background-color: #ff6723;
 }
-/* 반응형 */
+
 @media (max-width: 1024px) {
   .apply {
     font-size: 0.85rem;
     padding: 0.6rem 1.1rem;
   }
 }
+
 @media (max-width: 768px) {
   .apply {
     font-size: 0.75rem;

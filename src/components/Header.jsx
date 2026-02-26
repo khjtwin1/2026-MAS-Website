@@ -21,23 +21,23 @@ function Header() {
   };
 
   return (
-      <div className="header">
-        <div className="header_logo" onClick={handleLogoClick}>
-          <img src={logo} alt="로고" />
-          <div className="logoText">
-            <p className="logo">MAS</p>
-            <p className="logoMeaning">My Ability Share</p>
-          </div>
+    <div className="header">
+      <div className="header_logo" onClick={handleLogoClick}>
+        <img src={logo} alt="로고" />
+        <div className="logoText">
+          <p className="logo">MAS</p>
+          <p className="logoMeaning">My Ability Share</p>
         </div>
-        <ul className="nav_list">
-          {navItems.map((item) => (
-            <NavElements key={item.text} text={item.text} path={item.path} />
-          ))}
-        </ul>
-        <div className="header_socialLinks">
-          <SocialLinks />
-        </div>
-        <Apply/>
+      </div>
+      <ul className="nav_list">
+        {navItems.map((item) => (
+          <NavElements key={item.text} text={item.text} path={item.path} />
+        ))}
+      </ul>
+      <div className="header_socialLinks">
+        <SocialLinks />
+      </div>
+      <Apply />
     </div>
   );
 }

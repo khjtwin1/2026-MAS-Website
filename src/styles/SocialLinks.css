@@ -2,27 +2,29 @@
   align-items: center;
   list-style: none;
   display: flex;
-  gap: 26px;
+  gap: 1.6rem;
 }
+
 .nav_links > li > a > img {
-  height: 24px;
+  height: 1.5rem;
   cursor: pointer;
   display: block;
 }
-/* 반응형 */
+
 @media (max-width: 1024px) {
   .nav_links {
-    gap: 16px;
+    gap: 1rem;
   }
   .nav_links > li > a > img {
-    height: 20px;
+    height: 1.2rem;
   }
 }
+
 @media (max-width: 768px) {
   .nav_links {
-    gap: 12px;
+    gap: 0.6rem;
   }
   .nav_links > li > a > img {
-    height: 18px;
+    height: 1rem;
   }
 }

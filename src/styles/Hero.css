@@ -45,9 +45,18 @@
   height: 404.459px;
   border-radius: 50%;
   background:
-    linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%),
-    linear-gradient(295deg, rgba(130, 82, 82, 0.00) 9.45%, rgba(255, 21, 0, 0.34) 102.74%),
-    radial-gradient(66.75% 66.75% at 47.49% 31.8%, #FF5900 0%, #90390A 57.77%, #1A0A00 100%);
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+    linear-gradient(
+      295deg,
+      rgba(130, 82, 82, 0) 9.45%,
+      rgba(255, 21, 0, 0.34) 102.74%
+    ),
+    radial-gradient(
+      66.75% 66.75% at 47.49% 31.8%,
+      #ff5900 0%,
+      #90390a 57.77%,
+      #1a0a00 100%
+    );
   position: absolute;
   z-index: 100;
 }
@@ -95,7 +104,6 @@
   pointer-events: none;
 }
 
-
 .layer-back {
   z-index: 50;
 }
@@ -103,7 +111,6 @@
 .layer-front {
   z-index: 150;
 }
-
 
 .satellite-js {
   position: absolute;
