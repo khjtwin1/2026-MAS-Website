@@ -9,10 +9,8 @@
 
     .card{
         position: relative;
-        overflow: hidden;
         transition: all 1s ease;
         width: 100%;
-        max-width: auto;
     }
 
     .card:hover .memberFea1,
@@ -36,128 +34,133 @@
         justify-content: space-between;
 
         justify-content: flex-end;
-        padding: 257px 14px 0px 14px;
+        padding: 18.1rem 0.8rem 0px 0.8rem;
         background: rgba(0,0,0,0.50); /* 이미지 살짝 어둡게 */
         color: white;
     }
 
     .memberPicture {
-        width: 304px;
+        width: 19rem;
         height: auto;
-        border-radius: 12px;
+        border-radius: 0.7rem;
         display: block;
     }
 
     .memberClass {
-        font-size: 12px;
+        font-size: 0.7rem;
         font-family: "Pretendard-Medium", sans-serif;
     }
 
     .memberName {
-        font-size: 19px;
+        font-size: 1.1rem;
         font-family: "Pretendard-SemiBold", sans-serif;
-        margin-top: 6px;
-        margin-bottom: 6px;
+        margin-top: 0.3rem;
+        margin-bottom: 0.3rem;
     }
 
     .memberYear {
-        font-size: 14px;
+        font-size: 0.8rem;
         font-family: "Pretendard-Medium", sans-serif;
-        margin-bottom: 11px;
+        margin-bottom: 0.6rem;
     }
 
     .memberFea {
         display: flex;
-        gap: 11px;
-        margin-bottom: 11px;
+        gap: 0.6rem;
+        margin-bottom: 0.6rem;
         flex-wrap: wrap;
     }
 
     .memberFea1 {
         transition: all 0.3s ease;
-        font-size: 11px;
+        font-size: 0.6rem;
         font-family: "Pretendard-Medium", sans-serif;
-        padding: 10px;
-        border-radius: 1px;
-        border: 1px solid rgba(0, 0, 0, 0.3);
+        padding: 0.625rem;
+        border-radius: 0.06rem;
+        border: 0.06rem solid rgba(0, 0, 0, 0.3);
         background-color: rgba(255,255,255,0.15);
+        display: flex;
+        align-items: center;
     }
 
     .memberFea2 {
         transition: all 0.3s ease;
-        font-size: 11px;
+        font-size: 0.6rem;
         font-family: "Pretendard-Medium", sans-serif;
-        padding: 10px;
-        border-radius: 1px;
-        border: 1px solid rgba(0, 0, 0, 0.3);
+        padding: 0.625rem;
+        border-radius: 0.06rem;
+        border: 0.06rem solid rgba(0, 0, 0, 0.3);
         background-color: rgba(255,255,255,0.15);
+        display: flex;
+        align-items: center;
     }
+@media (max-width: 1024px) {
+    .memberPicture {
+        width: 14rem;
+        border-radius: 0.5rem;
+    }
+    .memberClass {
+        font-size: 0.5rem;
+    }
+    .memberName {
+        font-size: 0.9rem;
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+    }
+    .memberYear {
+        font-size: 0.7rem;
+    }
+    .memberFea {
+        gap: 0.4rem;
+        margin-bottom: 0.9rem;
+    }
+    .memberFea1 {
+        font-size: 0.5rem;
+        border-radius: 0.06rem;
+        padding: 0.4rem;
+        border: 0.06rem solid rgba(0, 0, 0, 0.3);
+    }
+    .memberFea2 {
+        font-size: 0.5rem;
+        border-radius: 0.06rem;
+        padding: 0.4rem;
+        border: 0.06rem solid rgba(0, 0, 0, 0.3);
+    }
+}
 
-    @media (max-width: 768px) {
-        
+@media (max-width: 768px) {
     .memberOverlay {
-        position: absolute;
-        inset: 0;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 160px;
-        justify-content: flex-end;
-        padding: 128px 70px 0px 7px;
-        background: rgba(0,0,0,0.50); /* 이미지 살짝 어둡게 */
-        color: white;
+        padding: 7rem 0.5rem 0px 0.5rem;
     }
-
     .memberPicture {
-        width: 152px;
-        height: auto;
-        border-radius: 6px;
-        display: block;
+        width: 10rem;
+        border-radius: 0.4rem;
     }
-
     .memberClass {
-        font-size: 6px;
-        font-family: "Pretendard-Medium", sans-serif;
+        font-size: 0.4rem;
     }
-
     .memberName {
-        font-size: 10px;
-        font-family: "Pretendard-SemiBold", sans-serif;
-        margin-top: 3px;
-        margin-bottom: 3px;
+        font-size: 0.7rem;
+        margin-top: 0.1rem;
+        margin-bottom: 0rem;
     }
-
     .memberYear {
-        font-size: 7px;
-        font-family: "Pretendard-Medium", sans-serif;
-        margin-bottom: 5.5px;
+        font-size: 0.6rem;
     }
-
     .memberFea {
-        display: flex;
-        gap: 5.5px;
-        margin-bottom: 5px;
-        flex-wrap: wrap;
+        gap: 0.3rem;
+        margin-bottom: 0.5rem;
     }
-
     .memberFea1 {
-        transition: all 0.3s ease;
-        font-size: 5.5px;
-        font-family: "Pretendard-Medium", sans-serif;
-        padding: 5px;
-        border-radius: 1px;
-        border: 1px solid rgba(0, 0, 0, 0.3);
-        background-color: rgba(255,255,255,0.15);
+        font-size: 0.4rem;
+        border-radius: 0.06rem;
+        padding: 0.2rem;
+        border: 0.06rem solid rgba(0, 0, 0, 0.3);
     }
-
     .memberFea2 {
-        transition: all 0.3s ease;
-        font-size: 5.5px;
-        font-family: "Pretendard-Medium", sans-serif;
-        padding: 5px;
-        border-radius: 1px;
-        border: 1px solid rgba(0, 0, 0, 0.3);
-        background-color: rgba(255,255,255,0.15);
+        font-size: 0.4rem;
+        border-radius: 0.06rem;
+        padding: 0.42em;
+        border: 0.06rem solid rgba(0, 0, 0, 0.3);
     }
-    }
+}

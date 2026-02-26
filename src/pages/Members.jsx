@@ -17,8 +17,6 @@ function Members(){
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
-    
-    // const members_banner = "/members_banner.svg";
 
     return(
         <>
