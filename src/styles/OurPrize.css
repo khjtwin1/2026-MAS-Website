@@ -143,7 +143,7 @@
     left: 12.563rem;
     z-index: 3;
 }
-@media (width: 1024px) {
+@media (max-width: 1024px) {
     #ourPrize {
         padding-top: 1rem;  
         padding-bottom: 7rem;
@@ -184,12 +184,12 @@
         height: 1.3rem;
     }
     .ourpPicture {
-        margin-left: 2rem;
+        margin-left: 0rem;
         margin-top: 9rem;
     }
 
     .ourprizePicture {
-        width: 30rem;
+        width: 27rem;
     }
 
     .miniTitan1 {
@@ -219,7 +219,7 @@
         left: 8.6rem;
     }
 }
-@media (width: 768px) {
+@media (max-width: 768px) {
     #ourPrize {
         padding-top: 0.8rem;  
         padding-bottom: 5rem;
