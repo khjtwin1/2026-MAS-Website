@@ -20,20 +20,17 @@
   position: relative;
   overflow: hidden;
 }
-
 .core-header {
   align-self: flex-start;
   margin-left: 10.94%;
   z-index: 2;
 }
-
 #vision .title {
   color: #cbcbcb;
   font-family: "Orbitron-ExtraBold", sans-serif;
   font-size: 4rem;
   margin-bottom: 0.75rem;
 }
-
 #vision .orange {
   font-family: "Pretendard-Medium", sans-serif;
   font-size: 1.25rem;
@@ -41,7 +38,6 @@
   margin-left: 2.5rem;
   margin-bottom: 3rem;
 }
-
 #vision .corevalues_items {
   align-items: center;
   display: grid;

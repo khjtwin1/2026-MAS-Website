@@ -12,7 +12,6 @@ function NavElements({ text, path, external }) {
       navigate(path);
     }
   };
-
   return (
     <li>
       <a

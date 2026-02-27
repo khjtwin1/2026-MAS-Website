@@ -26,11 +26,6 @@
   height: 219px;
 }
 
-.members-slide {
-    width: 304px;
-    height: 384px;
-}
-
 @keyframes scroll {
   from {
     transform: translateX(0);
